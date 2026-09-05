@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TWOJA-DOMENA.pl/sitemap.xml
+Sitemap: https://scorp-17.github.io/PrimeCraftWork
