@@ -5,15 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PrimeCraftWork — rusztowania w Belgii</title>
 <meta name="description" content="PrimeCraftWork — doświadczony zespół monterów rusztowań realizujący projekty w Belgii, z bezpośrednim nadzorem właściciela i transportem HDS.">
-<link rel="canonical" https://scorp-17.github.io/PrimeCraftWork/">
-
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrimeCraftWork — rusztowania w Belgii</title>
-<meta name="description" content="PrimeCraftWork — doświadczony zespół monterów rusztowań realizujący projekty w Belgii, z bezpośrednim nadzorem właściciela i transportem HDS.">
 <link rel="canonical" href="https://scorp-17.github.io/PrimeCraftWork/">
 
 <!-- Open Graph / social preview -->
@@ -518,7 +509,7 @@
         <p data-i18n="contact.subtitle">Odpowiadamy szybko — chętnie omówimy szczegóły współpracy.</p>
       </div>
       <div class="contact-grid contact-grid-single">
-        <form id="contactForm" novalidate action="https://script.google.com/macros/s/AKfycbyQZz1x8WJKVWySiKOsgnq7uG7O1y6q2BIgigF1_qshZ7b4ztskyRBPXJT4mTsQk3jn/exec" method="POST">
+        <form id="contactForm" novalidate action="https://script.google.com/macros/s/AKfycbyQZz1x8WJKVWySiKOsgnq7uG7O1y6q2BIgigF1_qshZ7b4ztskyRBPXJT4mTsQk3jn/exec" method="POST" target="hidden-submit-frame">
           <!-- honeypot: real users never see or fill this field -->
           <div class="hp-field" aria-hidden="true">
             <label for="cf-hp">Nie wypełniaj tego pola / Do not fill this field</label>
@@ -556,6 +547,7 @@
           <button type="submit" class="btn btn-dark" id="cf-submit" data-i18n="contact.form.submit" style="justify-self:start;">Wyślij zapytanie</button>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         </form>
+        <iframe name="hidden-submit-frame" id="hiddenSubmitFrame" style="display:none;" title="form submission target"></iframe>
       </div>
     </div>
   </section>
@@ -924,32 +916,37 @@ try {
 
       submitBtn.disabled = true;
       submitBtn.textContent = currentLang() === 'pl' ? 'Wysyłanie...' : 'Sending...';
+      try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
 
-      var formData = new FormData(form);
+      // Submit natively into a hidden iframe instead of using fetch()/XHR.
+      // This is plain HTML form behavior — no JS network API involved — so
+      // browser extensions that hook fetch/XHR (wallets, ad blockers, etc.)
+      // cannot intercept or break it. The iframe's "load" event fires once
+      // Google Apps Script has finished processing the request.
+      var frame = document.getElementById('hiddenSubmitFrame');
+      var settled = false;
 
-      // Google Apps Script Web Apps don't return normal cross-origin CORS
-      // headers, so we POST with mode:'no-cors' — the request still reaches
-      // the script and runs doPost() (writes the row + sends the Gmail),
-      // we just can't read the JSON response back. The Google Sheet is the
-      // real record of what came through.
-      fetch(form.action, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: formData
-      }).then(function(){
-        try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
+      function finishSubmit(){
+        if(settled) return;
+        settled = true;
+        frame.removeEventListener('load', onFrameLoad);
         showStatus('success',
           'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.',
           'Thank you! Your message has been sent — we will reply as soon as possible.');
         form.reset();
-      }).catch(function(){
-        showStatus('error',
-          'Nie udało się wysłać wiadomości — sprawdź połączenie z internetem i spróbuj ponownie.',
-          'Could not send the message — check your internet connection and try again.');
-      }).finally(function(){
         submitBtn.disabled = false;
         submitBtn.textContent = originalSubmitLabel;
-      });
+      }
+
+      function onFrameLoad(){ finishSubmit(); }
+      frame.addEventListener('load', onFrameLoad);
+
+      // safety net in case the iframe's load event doesn't fire for some reason
+      setTimeout(finishSubmit, 6000);
+
+      // no preventDefault beyond this point — let the browser submit the
+      // real <form> (action + method + target already set in the HTML)
+      HTMLFormElement.prototype.submit.call(form);
     });
   }
 } catch(err){
