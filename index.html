@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="PrimeCraftWork">
 <meta property="og:title" content="PrimeCraftWork — rusztowania w Belgii">
 <meta property="og:description" content="Doświadczony zespół monterów rusztowań realizujący projekty w Belgii, z bezpośrednim nadzorem właściciela i transportem HDS.">
-<meta property="og:url" content="https://scorp-17.github.io/PrimeCraftWork/">
+<meta property="og:url" content="https://scorp-17.github.io/PrimeCraftWorkl/">
 <meta property="og:locale" content="pl_PL">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PrimeCraftWork — rusztowania w Belgii">
@@ -25,7 +25,7 @@
   "@type": "LocalBusiness",
   "name": "PrimeCraftWork",
   "description": "Doświadczony zespół monterów rusztowań realizujący projekty w Belgii, z bezpośrednim nadzorem właściciela i transportem HDS.",
-  "url": "https://TWOJA-DOMENA.pl/",
+  "url": "https://scorp-17.github.io/PrimeCraftWork/",
   "areaServed": {
     "@type": "Country",
     "name": "Belgium"
@@ -275,7 +275,7 @@
   }
   input:focus, textarea:focus{outline:none; border-color:var(--orange);}
   textarea{resize:vertical; min-height:100px;}
-  .hp-field{position:absolute !important; left:-9999px !important; top:-9999px !important; width:1px; height:1px; overflow:hidden;}
+  .hp-field{position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0,0,0,0) !important; white-space:nowrap !important; border:0 !important;}
   .field-error{display:block; min-height:1.1em; font-size:0.8rem; color:#D93025; font-weight:600;}
   .field.has-error input, .field.has-error textarea{border-color:#D93025;}
   .form-status{font-size:0.92rem; font-weight:600; padding:2px 0; min-height:1.3em;}
@@ -512,12 +512,13 @@
         <form id="contactForm" novalidate action="https://formsubmit.co/scorpion171178@gmail.com" method="POST">
           <!-- honeypot: real users never see or fill this field -->
           <div class="hp-field" aria-hidden="true">
-            <label for="cf-website">Website</label>
-            <input type="text" id="cf-website" name="_honey" tabindex="-1" autocomplete="off">
+            <label for="cf-hp">Nie wypełniaj tego pola / Do not fill this field</label>
+            <input type="text" id="cf-hp" name="_honey" tabindex="-1" autocomplete="off">
           </div>
           <input type="hidden" name="_subject" value="PrimeCraftWork — nowe zapytanie ze strony">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" id="cf-next" value="">
 
           <div class="row2">
             <div class="field">
@@ -804,13 +805,20 @@ try {
     }, {passive:true});
   }
 
-  // ---- contact form: validation, spam protection, AJAX submit ----
+  // ---- contact form: validation, spam protection, real (non-AJAX) submit ----
   var form = document.getElementById('contactForm');
   if(form){
-    var FORM_ENDPOINT = 'https://formsubmit.co/ajax/scorpion171178@gmail.com';
     var formLoadedAt = Date.now();
     var submitBtn = document.getElementById('cf-submit');
     var statusEl = document.getElementById('formStatus');
+    var nextField = document.getElementById('cf-next');
+
+    // point FormSubmit's redirect-after-send back to this exact page, with
+    // a ?sent=1 marker we can detect on load — works on any domain/host
+    if(nextField){
+      var backUrl = window.location.origin + window.location.pathname;
+      nextField.value = backUrl + (backUrl.indexOf('?') > -1 ? '&' : '?') + 'sent=1#contact';
+    }
 
     var fieldsCfg = [
       { id:'cf-name', errId:'err-name', validate: function(v){
@@ -882,13 +890,24 @@ try {
       statusEl.textContent = currentLang() === 'pl' ? textPl : textEn;
     }
 
+    // show a success banner if we just came back from a real FormSubmit submission
+    if(window.location.search.indexOf('sent=1') > -1){
+      showStatus('success',
+        'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.',
+        'Thank you! Your message has been sent — we will reply as soon as possible.');
+      try{
+        var cleanUrl = window.location.pathname + window.location.hash;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }catch(err){}
+    }
+
     form.addEventListener('submit', function(e){
-      e.preventDefault();
       showStatus('', '', '');
 
-      // honeypot: if filled, it's a bot — silently pretend success, submit nothing
-      var honey = document.getElementById('cf-website');
+      // honeypot: if filled, it's a bot — block the real submission entirely
+      var honey = document.getElementById('cf-hp');
       if(honey && honey.value){
+        e.preventDefault();
         showStatus('success', 'Dziękujemy! Wiadomość została wysłana.', 'Thank you! Your message has been sent.');
         form.reset();
         return;
@@ -896,6 +915,7 @@ try {
 
       // time-trap: humans rarely fill and submit a form in under 3 seconds
       if(Date.now() - formLoadedAt < 3000){
+        e.preventDefault();
         showStatus('error', 'Spróbuj ponownie za chwilę.', 'Please try again in a moment.');
         return;
       }
@@ -905,6 +925,7 @@ try {
       try{ lastSubmit = parseInt(localStorage.getItem('pcw_last_submit') || '0', 10); }catch(err){}
       var secondsLeft = Math.ceil((60000 - (Date.now() - lastSubmit)) / 1000);
       if(lastSubmit && secondsLeft > 0){
+        e.preventDefault();
         showStatus('error',
           'Wiadomość już została wysłana. Spróbuj ponownie za ' + secondsLeft + ' s.',
           'A message was already sent. Please try again in ' + secondsLeft + 's.');
@@ -912,38 +933,17 @@ try {
       }
 
       if(!validateForm()){
+        e.preventDefault();
         showStatus('error', 'Popraw zaznaczone pola.', 'Please fix the highlighted fields.');
         return;
       }
 
+      // all checks passed — let the browser submit the form for real (no
+      // fetch/AJAX/CORS involved, so this works on any static host)
+      try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
       submitBtn.disabled = true;
-      var originalLabel = submitBtn.textContent;
       submitBtn.textContent = currentLang() === 'pl' ? 'Wysyłanie...' : 'Sending...';
-
-      var formData = new FormData(form);
-
-      fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: formData
-      }).then(function(response){
-        if(!response.ok) throw new Error('Network response was not ok');
-        return response.json().catch(function(){ return {}; });
-      }).then(function(){
-        try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
-        showStatus('success',
-          'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.',
-          'Thank you! Your message has been sent — we will reply as soon as possible.');
-        form.reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalLabel;
-      }).catch(function(){
-        // AJAX blocked (e.g. opened as a local file, or sandboxed preview with no
-        // outbound network access) — fall back to a normal form submission so the
-        // message still reaches the inbox, even though we lose the inline message.
-        try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
-        HTMLFormElement.prototype.submit.call(form);
-      });
+      // form submits natively here; no preventDefault was called
     });
   }
 } catch(err){
@@ -956,4 +956,5 @@ try {
 
 </body>
 </html>
+
 
