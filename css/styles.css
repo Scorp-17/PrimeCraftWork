@@ -7,6 +7,16 @@
   --maxw:1180px; --radius:14px;
   font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
 }
+/* Исправление горизонтального скролла (белая полоса справа) */
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+* {
+    min-width: 0;
+}
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{margin:0; background:var(--white); color:var(--ink); font-family:inherit; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;}
