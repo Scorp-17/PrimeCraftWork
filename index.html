@@ -6,10 +6,44 @@
 <title>PrimeCraftWork — Montaż i demontaż rusztowań w Belgii</title>
 <meta name="description" content="Doświadczony zespół monterów rusztowań dla firm budowlanych i przemysłowych w Belgii. B2B, HDS, bezpośredni nadzór. Zapytaj o wycenę.">
 <link rel="canonical" href="https://scorp-17.github.io/PrimeCraftWork/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PrimeCraftWork">
+<meta property="og:title" content="PrimeCraftWork — Montaż i demontaż rusztowań w Belgii">
+<meta property="og:description" content="Doświadczony zespół monterów rusztowań dla firm budowlanych i przemysłowych w Belgii. B2B, HDS.">
+<meta property="og:url" content="https://scorp-17.github.io/PrimeCraftWork/">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PrimeCraftWork — rusztowania w Belgii">
+<meta name="twitter:description" content="Doświadczony zespół monterów rusztowań. B2B, HDS.">
+
+<!-- Structured data: helps Google show this as a local business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "PrimeCraftWork",
+  "description": "Doświadczony zespół monterów rusztowań realizujący projekty w Belgii, z bezpośrednim nadzorem właściciela i transportem HDS.",
+  "url": "https://scorp-17.github.io/PrimeCraftWork/",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Belgium"
+  },
+  "email": "scorpion171178@gmail.com",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Montaż rusztowań" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Demontaż rusztowań" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transport z HDS" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Podwykonawstwo" } }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -32,6 +66,8 @@
         <div class="lang-menu" id="langMenu">
           <button data-lang="pl" aria-current="true">Polski</button>
           <button data-lang="en">English</button>
+          <button data-lang="nl">Nederlands</button>
+          <button data-lang="fr">Français</button>
         </div>
       </div>
       <a href="#contact" class="btn btn-orange" data-i18n="nav.cta" style="padding:10px 18px; font-size:0.86rem;">Zapytaj o wycenę</a>
@@ -64,10 +100,7 @@
 
   <section id="trust" class="section-dark">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="trust.kicker">Dlaczego my</span>
-        <h2 data-i18n="trust.title">Dlaczego warto z nami współpracować?</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="trust.kicker">Dlaczego my</span><h2 data-i18n="trust.title">Dlaczego warto z nami współpracować?</h2></div>
       <div class="why-grid">
         <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="trust.i1.title">Doświadczenie</h3><p data-i18n="trust.i1.text">Doświadczona ekipa na budowach w Belgii.</p></div>
         <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div><h3 data-i18n="trust.i2.title">Bezpośrednia współpraca</h3><p data-i18n="trust.i2.text">Bez zbędnych pośredników.</p></div>
@@ -225,6 +258,8 @@
       <div class="foot-lang">
         <button data-lang="pl" aria-current="true">PL</button>
         <button data-lang="en">EN</button>
+        <button data-lang="nl">NL</button>
+        <button data-lang="fr">FR</button>
       </div>
     </div>
   </div>
@@ -233,7 +268,8 @@
 <div class="privacy-banner" id="privacyBanner" role="dialog" aria-live="polite" aria-label="Powiadomienie o przetwarzaniu danych">
   <div class="privacy-banner-inner">
     <p><span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span></p>
-    <button type="button" class="btn btn-orange" id="privacyBannerOk" data-i18n="privacyBanner.ok" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
+    <button type="button" class="btn btn-orange" id="privacyBannerOk" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" data-i18n="privacyBanner.ok" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
+  </div>
 </div>
 
 <div class="policy-modal" id="policyModal" role="dialog" aria-modal="true" aria-label="Polityka prywatności">
@@ -258,7 +294,7 @@
   </div>
 </div>
 
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js"></script>
 <noscript><style>.reveal{opacity:1 !important; transform:none !important;}</style></noscript>
 </body>
 </html>
