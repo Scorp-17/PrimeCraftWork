@@ -268,7 +268,27 @@
 <div class="privacy-banner" id="privacyBanner" role="dialog" aria-live="polite" aria-label="Powiadomienie o przetwarzaniu danych">
   <div class="privacy-banner-inner">
     <p><span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span></p>
-    <button type="button" class="btn btn-orange" id="privacyBannerOk" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" data-i18n="privacyBanner.ok" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
+    <div class="policy-modal" id="policyModal" role="dialog" aria-modal="true" aria-label="Polityka prywatności">
+  <div class="policy-modal-inner">
+    <button class="policy-modal-close" id="policyModalClose" aria-label="Zamknij"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h2 data-i18n="policy.title">Polityka prywatności</h2>
+    <p data-i18n="policy.intro">Niniejsza polityka prywatności opisuje, w jaki sposób PrimeCraftWork przetwarza dane osobowe osób korzystających z formularza kontaktowego na tej stronie internetowej.</p>
+    <h3 data-i18n="policy.h1">Administrator danych</h3>
+    <p data-i18n="policy.p1">Administratorem danych osobowych jest PrimeCraftWork. Kontakt: primecraftwork1@gmail.com.</p>
+    <h3 data-i18n="policy.h2">Zakres i cel przetwarzania</h3>
+    <p data-i18n="policy.p2">Zbierane są: imię i nazwisko, e-mail, telefon (opcjonalnie), firma (opcjonalnie), treść wiadomości oraz dodatkowe pola projektu. Dane służą wyłącznie do obsługi zapytania.</p>
+    <h3 data-i18n="policy.h3">Podstawa prawna</h3>
+    <p data-i18n="policy.p3">Dobrowolna zgoda (art. 6 ust. 1 lit. a RODO).</p>
+    <h3 data-i18n="policy.h4">Odbiorcy danych</h3>
+    <p data-i18n="policy.p4">Dane są przechowywane w Google (Sheets, Gmail). Nie są sprzedawane.</p>
+    <h3 data-i18n="policy.h5">Okres przechowywania</h3>
+    <p data-i18n="policy.p5">Maksymalnie 24 miesiące od ostatniego kontaktu.</p>
+    <h3 data-i18n="policy.h6">Prawa osoby</h3>
+    <p data-i18n="policy.p6">Prawo dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia, wycofania zgody i skargi.</p>
+    <h3 data-i18n="policy.h7">Dobrowolność</h3>
+    <p data-i18n="policy.p7">Podanie danych jest dobrowolne, ale niezbędne do odpowiedzi.</p>
+  </div>
+</div>
   </div>
 </div>
 
