@@ -129,6 +129,14 @@ try {
       var key = nodes[i].getAttribute('data-i18n');
       if(dict[lang][key] !== undefined) nodes[i].textContent = dict[lang][key];
     }
+    
+    // АВТОМАТИЧЕСКИЙ ПЕРЕВОД ОПЦИЙ В ВЫПАДАЮЩИХ СПИСКАХ (ФИКС!)
+    var options = document.querySelectorAll('option[data-i18n]');
+    for(var o=0; o<options.length; o++){
+      var optKey = options[o].getAttribute('data-i18n');
+      if(dict[lang][optKey] !== undefined) options[o].textContent = dict[lang][optKey];
+    }
+    
     var ph = document.querySelectorAll('[data-i18n-placeholder]');
     for(var j=0;j<ph.length;j++){
       var key2 = ph[j].getAttribute('data-i18n-placeholder');
@@ -167,7 +175,6 @@ try {
     Array.prototype.slice.call(navLinks.querySelectorAll('a')).forEach(function(link){
       link.addEventListener('click', function(){ navLinks.classList.remove('open'); burgerBtn.setAttribute('aria-expanded', 'false'); });
     });
-    document.addEventListener('click', function(e){ if(navLinks.classList.contains('open') && !navLinks.contains(e.target) && e.target !== burgerBtn && !burgerBtn.contains(e.target)){ navLinks.classList.remove('open'); burgerBtn.setAttribute('aria-expanded', 'false'); } });
   }
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
