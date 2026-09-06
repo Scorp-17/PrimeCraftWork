@@ -80,7 +80,7 @@ section{padding:96px 0;}
 .about-text p{color:var(--gray); font-size:1.05rem; margin-top:14px;}
 .quote-box{margin-top:26px; padding:22px 24px; border-left:4px solid var(--orange); background:var(--off); border-radius:0 10px 10px 0; font-size:1rem; color:var(--ink); font-weight:600;}
 
-/* SERVICES & FOR WHOM - Белые плитки, без рамок, темные при наведении */
+/* SERVICES & FOR WHOM - Плитки с белым фоном и темным при наведении */
 .svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
 .svc-card{
   background: var(--white); 
@@ -96,7 +96,7 @@ section{padding:96px 0;}
 .svc-card:hover::before { opacity: 1; }
 .svc-card:hover { 
   transform: translateY(-6px); 
-  background: var(--navy); /* Тёмный фон при наведении */
+  background: var(--navy);
   box-shadow: 0 20px 40px rgba(10,25,47,0.15); 
 }
 .svc-icon{width:48px; height:48px; border-radius:12px; background:rgba(255,107,0,0.1); color:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:15px; transition: background .3s ease;}
@@ -109,7 +109,6 @@ section{padding:96px 0;}
 .svc-card p{color:var(--gray); font-size:0.92rem; transition: color .3s ease;}
 .svc-card:hover p { color: rgba(255,255,255,0.75); }
 
-/* Фон секции Dla kogo делаем белым, чтобы карточки выделялись */
 #for-whom { background: var(--white); }
 
 /* WHY US */
