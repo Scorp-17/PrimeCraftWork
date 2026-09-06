@@ -9,8 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- Добавлен ?v=3 для принудительного сброса кэша браузера -->
-<link rel="stylesheet" href="css/styles.css?v=3">
+<link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 <body>
 
@@ -42,11 +41,8 @@
 </header>
 
 <main id="top">
-
-  <!-- HERO: Убраны инлайн-стили из .hero-bg -->
   <section class="hero">
     <div class="hero-bg" style="background-image:url('images/sunset.jpg');"></div>
-    
     <div class="hero-inner">
       <div class="glass-card">
       <span class="eyebrow" data-i18n="hero.eyebrow">PRIME CRAFT WORK · Rusztowania w Belgii</span>
@@ -66,7 +62,6 @@
     </div>
   </section>
 
-  <!-- TRUST -->
   <section id="trust" class="section-dark">
     <div class="wrap">
       <div class="section-head reveal">
@@ -74,133 +69,53 @@
         <h2 data-i18n="trust.title">Dlaczego warto z nami współpracować?</h2>
       </div>
       <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-          <h3 data-i18n="trust.i1.title">Doświadczenie</h3>
-          <p data-i18n="trust.i1.text">Doświadczona ekipa na budowach w Belgii.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div>
-          <h3 data-i18n="trust.i2.title">Bezpośrednia współpraca</h3>
-          <p data-i18n="trust.i2.text">Bez zbędnych pośredników.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div>
-          <h3 data-i18n="trust.i3.title">Osobisty nadzór</h3>
-          <p data-i18n="trust.i3.text">Bezpośrednia kontrola realizacji prac.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div>
-          <h3 data-i18n="trust.i4.title">Transport HDS</h3>
-          <p data-i18n="trust.i4.text">C+E + doświadczenie w transporcie rusztowań.</p>
-        </div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="trust.i1.title">Doświadczenie</h3><p data-i18n="trust.i1.text">Doświadczona ekipa na budowach w Belgii.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div><h3 data-i18n="trust.i2.title">Bezpośrednia współpraca</h3><p data-i18n="trust.i2.text">Bez zbędnych pośredników.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div><h3 data-i18n="trust.i3.title">Osobisty nadzór</h3><p data-i18n="trust.i3.text">Bezpośrednia kontrola realizacji prac.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><h3 data-i18n="trust.i4.title">Transport HDS</h3><p data-i18n="trust.i4.text">C+E + doświadczenie w transporcie rusztowań.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section id="services" class="section-off">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="services.kicker">Usługi</span>
-        <h2 data-i18n="services.title">Nasze usługi</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="services.kicker">Usługi</span><h2 data-i18n="services.title">Nasze usługi</h2></div>
       <div class="svc-grid">
-        <div class="svc-card reveal">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7M4 7h4M4 10h4M4 13h4M4 16h4M8 21V7M14 21V10M14 10h4M14 13h4M14 16h4M18 21V10M8 8h8M8 15h8"/></svg></div>
-          <span class="svc-num">01</span>
-          <h3 data-i18n="services.i1.title">Montaż rusztowań</h3>
-          <p data-i18n="services.i1.text">Montaż rusztowań na obiektach przemysłowych, komercyjnych i mieszkalnych.</p>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19L19 5M5 5l14 14M9 5H5v4M15 19h4v-4"/></svg></div>
-          <span class="svc-num">02</span>
-          <h3 data-i18n="services.i2.title">Demontaż rusztowań</h3>
-          <p data-i18n="services.i2.text">Bezpieczny i sprawny demontaż po zakończeniu prac.</p>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
-          <span class="svc-num">03</span>
-          <h3 data-i18n="services.i3.title">Podwykonawstwo</h3>
-          <p data-i18n="services.i3.text">Doświadczona ekipa jako wsparcie dla firm budowlanych i wykonawców.</p>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div>
-          <span class="svc-num">04</span>
-          <h3 data-i18n="services.i4.title">Transport HDS</h3>
-          <p data-i18n="services.i4.text">Transport materiałów i rusztowań z wykorzystaniem samochodu z HDS.</p>
-        </div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7M4 7h4M4 10h4M4 13h4M4 16h4M8 21V7M14 21V10M14 10h4M14 13h4M14 16h4M18 21V10M8 8h8M8 15h8"/></svg></div><span class="svc-num">01</span><h3 data-i18n="services.i1.title">Montaż rusztowań</h3><p data-i18n="services.i1.text">Montaż rusztowań na obiektach przemysłowych, komercyjnych i mieszkalnych.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19L19 5M5 5l14 14M9 5H5v4M15 19h4v-4"/></svg></div><span class="svc-num">02</span><h3 data-i18n="services.i2.title">Demontaż rusztowań</h3><p data-i18n="services.i2.text">Bezpieczny i sprawny demontaż po zakończeniu prac.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><span class="svc-num">03</span><h3 data-i18n="services.i3.title">Podwykonawstwo</h3><p data-i18n="services.i3.text">Doświadczona ekipa jako wsparcie dla firm budowlanych i wykonawców.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><span class="svc-num">04</span><h3 data-i18n="services.i4.title">Transport HDS</h3><p data-i18n="services.i4.text">Transport materiałów i rusztowań z wykorzystaniem samochodu z HDS.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- DLA KOGO -->
   <section id="for-whom">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="forwhom.kicker">Dla kogo</span>
-        <h2 data-i18n="forwhom.title">Dla kogo pracujemy?</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="forwhom.kicker">Dla kogo</span><h2 data-i18n="forwhom.title">Dla kogo pracujemy?</h2></div>
       <div class="svc-grid">
-        <div class="svc-card reveal">
-          <h3 data-i18n="forwhom.i1">Firmy budowlane</h3>
-          <p data-i18n="forwhom.i1.text">Wsparcie na budowie tam, gdzie potrzebne są rusztowania.</p>
-        </div>
-        <div class="svc-card reveal">
-          <h3 data-i18n="forwhom.i2">Generalni wykonawcy</h3>
-          <p data-i18n="forwhom.i2.text">Możemy pracować jako podwykonawca rusztowań.</p>
-        </div>
-        <div class="svc-card reveal">
-          <h3 data-i18n="forwhom.i3">Firmy przemysłowe</h3>
-          <p data-i18n="forwhom.i3.text">Rusztowania przemysłowe o różnych wysokościach.</p>
-        </div>
-        <div class="svc-card reveal">
-          <h3 data-i18n="forwhom.i4">Firmy rusztowaniowe</h3>
-          <p data-i18n="forwhom.i4.text">Dodatkowa ręka do pracy i profesjonalna ekipa monterów.</p>
-        </div>
+        <div class="svc-card reveal"><h3 data-i18n="forwhom.i1">Firmy budowlane</h3><p data-i18n="forwhom.i1.text">Wsparcie na budowie tam, gdzie potrzebne są rusztowania.</p></div>
+        <div class="svc-card reveal"><h3 data-i18n="forwhom.i2">Generalni wykonawcy</h3><p data-i18n="forwhom.i2.text">Możemy pracować jako podwykonawca rusztowań.</p></div>
+        <div class="svc-card reveal"><h3 data-i18n="forwhom.i3">Firmy przemysłowe</h3><p data-i18n="forwhom.i3.text">Rusztowania przemysłowe o różnych wysokościach.</p></div>
+        <div class="svc-card reveal"><h3 data-i18n="forwhom.i4">Firmy rusztowaniowe</h3><p data-i18n="forwhom.i4.text">Dodatkowa ręka do pracy i profesjonalna ekipa monterów.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
   <section id="why" class="section-dark">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="why.kicker">Dlaczego my</span>
-        <h2 data-i18n="why.title">Co nas wyróżnia na tle innych</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="why.kicker">Dlaczego my</span><h2 data-i18n="why.title">Co nas wyróżnia na tle innych</h2></div>
       <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-          <h3 data-i18n="why.i1.title">Doświadczenie w Belgii</h3>
-          <p data-i18n="why.i1.text">Od lat pracujemy przy realizacji projektów rusztowaniowych na terenie Belgii i znamy lokalną specyfikę budów.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div>
-          <h3 data-i18n="why.i2.title">Osobista odpowiedzialność</h3>
-          <p data-i18n="why.i2.text">Pracuję na co dzień razem z zespołem na budowie i osobiście odpowiadam za prawidłową realizację prac.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div>
-          <h3 data-i18n="why.i3.title">Dodatkowo: transport z HDS</h3>
-          <p data-i18n="why.i3.text">Dysponujemy kierowcą kat. C+E z doświadczeniem w obsłudze samochodu z żurawiem HDS — dodatkowy atut dla Twojego projektu.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div>
-          <h3 data-i18n="why.i4.title">Długoterminowa współpraca</h3>
-          <p data-i18n="why.i4.text">Zależy nam na stabilnych, wieloletnich relacjach B2B, nie na jednorazowych zleceniach.</p>
-        </div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="why.i1.title">Doświadczenie w Belgii</h3><p data-i18n="why.i1.text">Od lat pracujemy przy realizacji projektów rusztowaniowych na terenie Belgii i znamy lokalną specyfikę budów.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div><h3 data-i18n="why.i2.title">Osobista odpowiedzialność</h3><p data-i18n="why.i2.text">Pracuję na co dzień razem z zespołem na budowie i osobiście odpowiadam za prawidłową realizację prac.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><h3 data-i18n="why.i3.title">Dodatkowo: transport z HDS</h3><p data-i18n="why.i3.text">Dysponujemy kierowcą kat. C+E z doświadczeniem w obsłudze samochodu z żurawiem HDS — dodatkowy atut dla Twojego projektu.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div><h3 data-i18n="why.i4.title">Długoterminowa współpraca</h3><p data-i18n="why.i4.text">Zależy nam na stabilnych, wieloletnich relacjach B2B, nie na jednorazowych zleceniach.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section id="process">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="process.kicker">Proces</span>
-        <h2 data-i18n="process.title">Jak wygląda współpraca?</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="process.kicker">Proces</span><h2 data-i18n="process.title">Jak wygląda współpraca?</h2></div>
       <div class="steps-grid">
         <div class="step-card reveal"><span class="step-num">01</span><h3 data-i18n="process.i1">Kontakt</h3></div>
         <div class="step-card reveal"><span class="step-num">02</span><h3 data-i18n="process.i2">Ustalenie zakresu prac</h3></div>
@@ -211,13 +126,9 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="projects.kicker">Realizacje</span>
-        <h2 data-i18n="projects.title">Nasze realizacje</h2>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="projects.kicker">Realizacje</span><h2 data-i18n="projects.title">Nasze realizacje</h2></div>
       <div class="gallery-grid">
         <div class="g-item reveal"><img src="images/pyramid.jpg" alt="Rusztowanie na wielopoziomowym obiekcie przemysłowym" loading="lazy"></div>
         <div class="g-item reveal"><img src="images/tower.jpg" alt="Zmontowana wieża rusztowania widziana od dołu" loading="lazy"></div>
@@ -234,66 +145,29 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section style="padding-top:80px;">
     <div class="wrap">
-      <div class="cta-band reveal">
-        <div>
-          <h2 data-i18n="cta.title">Potrzebujesz sprawdzonej ekipy rusztowaniowej?</h2>
-          <p data-i18n="cta.text">Opowiedz nam o swoim projekcie.</p>
-        </div>
-        <a href="#contact" class="btn btn-orange" data-i18n="cta.button">Zapytaj o wycenę</a>
-      </div>
+      <div class="cta-band reveal"><div><h2 data-i18n="cta.title">Potrzebujesz sprawdzonej ekipy rusztowaniowej?</h2><p data-i18n="cta.text">Opowiedz nam o swoim projekcie.</p></div><a href="#contact" class="btn btn-orange" data-i18n="cta.button">Zapytaj o wycenę</a></div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact" class="section-off">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="kicker" data-i18n="contact.kicker">Kontakt</span>
-        <h2 data-i18n="contact.title">Napisz do nas</h2>
-        <p data-i18n="contact.subtitle">Odpowiadamy szybko — chętnie omówimy szczegóły współpracy.</p>
-      </div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="contact.kicker">Kontakt</span><h2 data-i18n="contact.title">Napisz do nas</h2><p data-i18n="contact.subtitle">Odpowiadamy szybko — chętnie omówimy szczegóły współpracy.</p></div>
       <div class="contact-grid contact-grid-single">
         <form id="contactForm" novalidate action="https://script.google.com/macros/s/AKfycbyFHxN8MSgq8i7x1XjUoM0EIpOejp-2xsTN_8ysJCX5-bXI_negKmwNM4Urt4QkCWR_/exec" method="POST" target="hidden-submit-frame">
-          <div class="hp-field" aria-hidden="true">
-            <label for="cf-hp">Nie wypełniaj tego pola / Do not fill this field</label>
-            <input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off">
-          </div>
-
+          <div class="hp-field" aria-hidden="true"><label for="cf-hp">Nie wypełniaj tego pola / Do not fill this field</label><input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off"></div>
           <div class="row2">
-            <div class="field">
-              <label for="cf-name" data-i18n="contact.form.name">Imię i nazwisko</label>
-              <input id="cf-name" name="Imię i nazwisko" type="text" required minlength="2">
-              <span class="field-error" id="err-name"></span>
-            </div>
-            <div class="field">
-              <label for="cf-email" data-i18n="contact.form.email">E-mail</label>
-              <input id="cf-email" name="Email" type="email" required>
-              <span class="field-error" id="err-email"></span>
-            </div>
+            <div class="field"><label for="cf-name" data-i18n="contact.form.name">Imię i nazwisko</label><input id="cf-name" name="Imię i nazwisko" type="text" required minlength="2"><span class="field-error" id="err-name"></span></div>
+            <div class="field"><label for="cf-email" data-i18n="contact.form.email">E-mail</label><input id="cf-email" name="Email" type="email" required><span class="field-error" id="err-email"></span></div>
           </div>
-          
           <div class="row2">
-            <div class="field">
-              <label for="cf-phone" data-i18n="contact.form.phone">Telefon</label>
-              <input id="cf-phone" name="Telefon" type="tel">
-              <span class="field-error" id="err-phone"></span>
-            </div>
-            <div class="field">
-              <label for="cf-company" data-i18n="contact.form.company">Firma</label>
-              <input id="cf-company" name="Firma" type="text">
-            </div>
+            <div class="field"><label for="cf-phone" data-i18n="contact.form.phone">Telefon</label><input id="cf-phone" name="Telefon" type="tel"><span class="field-error" id="err-phone"></span></div>
+            <div class="field"><label for="cf-company" data-i18n="contact.form.company">Firma</label><input id="cf-company" name="Firma" type="text"></div>
           </div>
-
           <div class="row2">
-            <div class="field">
-              <label for="cf-location" data-i18n="contact.form.location">Lokalizacja budowy</label>
-              <input id="cf-location" name="Lokalizacja budowy" type="text">
-            </div>
-            <div class="field">
-              <label for="cf-type" data-i18n="contact.form.type">Rodzaj projektu</label>
+            <div class="field"><label for="cf-location" data-i18n="contact.form.location">Lokalizacja budowy</label><input id="cf-location" name="Lokalizacja budowy" type="text"></div>
+            <div class="field"><label for="cf-type" data-i18n="contact.form.type">Rodzaj projektu</label>
               <select id="cf-type" name="Rodzaj projektu">
                 <option value="Budowa przemysłowa" data-i18n="contact.form.type1">Budowa przemysłowa</option>
                 <option value="Budynek mieszkalny" data-i18n="contact.form.type2">Budynek mieszkalny</option>
@@ -302,10 +176,8 @@
               </select>
             </div>
           </div>
-
           <div class="row2">
-            <div class="field">
-              <label for="cf-scope" data-i18n="contact.form.scope">Zakres prac</label>
+            <div class="field"><label for="cf-scope" data-i18n="contact.form.scope">Zakres prac</label>
               <select id="cf-scope" name="Zakres prac">
                 <option value="Montaż" data-i18n="contact.form.scope1">Montaż</option>
                 <option value="Demontaż" data-i18n="contact.form.scope2">Demontaż</option>
@@ -313,22 +185,10 @@
                 <option value="Transport HDS" data-i18n="contact.form.scope4">Transport HDS</option>
               </select>
             </div>
-            <div class="field">
-              <label for="cf-term" data-i18n="contact.form.term">Planowany termin</label>
-              <input id="cf-term" name="Planowany termin" type="text" data-i18n-placeholder="contact.form.termPlaceholder" placeholder="RRRR-MM-DD">
-            </div>
+            <div class="field"><label for="cf-term" data-i18n="contact.form.term">Planowany termin</label><input id="cf-term" name="Planowany termin" type="text" data-i18n-placeholder="contact.form.termPlaceholder" placeholder="RRRR-MM-DD"></div>
           </div>
-
-          <div class="field">
-            <label for="cf-msg" data-i18n="contact.form.message">Wiadomość</label>
-            <textarea id="cf-msg" name="Wiadomość" data-i18n-placeholder="contact.form.msgPlaceholder" placeholder="Opisz swój obiekt i zakres prac" required minlength="10"></textarea>
-            <span class="field-error" id="err-msg"></span>
-          </div>
-          
-          <div class="consent-field" id="consentField">
-            <input type="checkbox" id="cf-consent" name="Zgoda" value="tak" required>
-            <label for="cf-consent"><span data-i18n="contact.form.consentBefore">Zapoznałem/-am się z </span><a href="#" id="policyLinkForm" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="contact.form.consentAfter"> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi tego zapytania.</span></label>
-          </div>
+          <div class="field"><label for="cf-msg" data-i18n="contact.form.message">Wiadomość</label><textarea id="cf-msg" name="Wiadomość" data-i18n-placeholder="contact.form.msgPlaceholder" placeholder="Opisz swój obiekt i zakres prac" required minlength="10"></textarea><span class="field-error" id="err-msg"></span></div>
+          <div class="consent-field" id="consentField"><input type="checkbox" id="cf-consent" name="Zgoda" value="tak" required><label for="cf-consent"><span data-i18n="contact.form.consentBefore">Zapoznałem/-am się z </span><a href="#" id="policyLinkForm" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="contact.form.consentAfter"> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi tego zapytania.</span></label></div>
           <span class="field-error" id="err-consent"></span>
           <button type="submit" class="btn btn-dark" id="cf-submit" data-i18n="contact.form.submit" style="justify-self:start;">Wyślij zapytanie</button>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
@@ -372,9 +232,7 @@
 
 <div class="privacy-banner" id="privacyBanner" role="dialog" aria-live="polite" aria-label="Powiadomienie o przetwarzaniu danych">
   <div class="privacy-banner-inner">
-    <p>
-      <span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span>
-    </p>
+    <p><span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span></p>
     <button type="button" class="btn btn-orange" id="privacyBannerOk" data-i18n="privacyBanner.ok" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
   </div>
 </div>
@@ -401,8 +259,7 @@
   </div>
 </div>
 
-<!-- Добавлен ?v=3 для сброса кэша -->
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 <noscript><style>.reveal{opacity:1 !important; transform:none !important;}</style></noscript>
 </body>
 </html>
