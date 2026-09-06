@@ -7,6 +7,7 @@
 <meta name="description" content="Doświadczony zespół monterów rusztowań dla firm budowlanych i przemysłowych w Belgii. B2B, HDS, bezpośredni nadzór. Zapytaj o wycenę.">
 <link rel="canonical" href="https://scorp-17.github.io/PrimeCraftWork/">
 
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PrimeCraftWork">
 <meta property="og:title" content="PrimeCraftWork — Montaż i demontaż rusztowań w Belgii">
@@ -17,6 +18,7 @@
 <meta name="twitter:title" content="PrimeCraftWork — rusztowania w Belgii">
 <meta name="twitter:description" content="Doświadczony zespół monterów rusztowań. B2B, HDS.">
 
+<!-- Structured data: helps Google show this as a local business -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,119 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- ====== ВСЕ СТИЛИ ВСТРОЕНЫ СЮДА ====== -->
-<style>
-:root{
-  --navy:#0A192F; --navy-2:#112240; --navy-3:#1D3A5F;
-  --white:#FFFFFF; --off:#F4F6F9;
-  --orange:#FF6B00; --orange-dk:#E05E00; --gold:#F5A623;
-  --ink:#0A192F; --gray:#5B6472;
-  --line:rgba(255,255,255,0.14); --line-dk:rgba(10,25,47,0.1);
-  --maxw:1180px; --radius:14px;
-  font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{margin:0; background:var(--white); color:var(--ink); font-family:inherit; font-size:16px; line-height:1.6;}
-h1,h2,h3,h4{margin:0; font-weight:800; line-height:1.14; letter-spacing:-0.01em;}
-p{margin:0;} a{color:inherit; text-decoration:none;} img{max-width:100%; display:block;} button{font-family:inherit; cursor:pointer;}
-.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
-::selection{background:var(--orange); color:var(--white);}
-.reveal{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease;}
-.reveal.in{opacity:1; transform:none;}
-
-header{position:sticky; top:0; z-index:100; background:var(--navy);}
-.nav{display:flex; align-items:center; justify-content:space-between; max-width:var(--maxw); margin:0 auto; padding:16px 28px; gap:10px;}
-.logo{font-weight:800; font-size:1.25rem; color:var(--white);} .logo span{color:var(--orange);}
-.navlinks{display:flex; gap:30px; align-items:center;} .navlinks a{color:var(--white); font-size:0.92rem; font-weight:600; opacity:0.88;}
-.navlinks a:hover{opacity:1; color:var(--orange);}
-.nav-right{display:flex; align-items:center; gap:16px;}
-.langsw{position:relative;} .lang-btn{display:flex; align-items:center; gap:6px; background:rgba(255,255,255,0.08); border:1px solid var(--line); color:var(--white); padding:8px 12px; border-radius:999px; font-size:0.85rem; font-weight:700;}
-.lang-btn svg{width:16px; height:16px;} .lang-menu{position:absolute; top:calc(100% + 8px); right:0; background:var(--navy-2); border:1px solid var(--line); border-radius:10px; display:none; min-width:130px;}
-.lang-menu.open{display:block;} .lang-menu button{display:block; width:100%; text-align:left; background:none; border:none; color:var(--white); padding:10px 14px; font-size:0.88rem;}
-.lang-menu button:hover{background:rgba(255,255,255,0.08);} .lang-menu button[aria-current="true"]{color:var(--orange);}
-.btn{display:inline-flex; align-items:center; gap:8px; padding:14px 26px; border-radius:999px; font-weight:700; font-size:0.95rem; border:2px solid transparent; transition:all .2s ease;}
-.btn-orange{background:var(--orange); color:var(--white);} .btn-orange:hover{background:var(--orange-dk);}
-.btn-ghost{background:transparent; color:var(--white); border-color:rgba(255,255,255,0.4);} .btn-ghost:hover{border-color:var(--white);}
-.btn-dark{background:var(--navy); color:var(--white);} .btn-dark:hover{background:var(--navy-2);}
-.burger{display:none; background:none; border:none; padding:6px;} .burger span{display:block; width:24px; height:2px; background:var(--white); margin:5px 0;}
-
-.hero{position:relative; min-height:80vh; background:var(--navy); display:flex; align-items:center; justify-content:center; overflow:hidden;}
-.hero-bg{position:absolute; inset:0; background-size:cover!important; background-position:center!important; background-repeat:no-repeat!important;}
-.hero-inner{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:100px 28px; width:100%;}
-.glass-card{background:rgba(10,25,47,0.35); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.3); border-radius:26px; padding:44px; max-width:720px; width:100%;}
-.eyebrow{display:inline-block; color:var(--gold); font-weight:700; border:1px solid rgba(245,166,35,0.4); background:rgba(245,166,35,0.08); padding:6px 14px; border-radius:999px; margin-bottom:24px;}
-.hero h1{color:var(--white); font-size:clamp(2.2rem,5vw,3.4rem);} .hero p.lead{color:rgba(255,255,255,0.85); font-size:1.12rem; margin:22px 0 20px;}
-.hero-advantages{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:34px;} .hero-advantages span{background:rgba(255,255,255,0.15); color:var(--white); padding:10px 20px; border-radius:50px; font-weight:700;}
-
-section{padding:96px 0;} .section-dark{background:var(--navy); color:var(--white);} .section-off{background:var(--off);} .section-head{max-width:640px; margin-bottom:48px;}
-.kicker{color:var(--orange); font-weight:800; text-transform:uppercase; margin-bottom:14px; display:block;} .section-head h2{font-size:clamp(1.8rem,3.4vw,2.4rem);}
-
-.about{display:grid; grid-template-columns:0.95fr 1.05fr; gap:56px; align-items:center;} .about-media{position:relative; border-radius:var(--radius); overflow:hidden; aspect-ratio:4/5;}
-.about-media img{width:100%; height:100%; object-fit:cover;} .about-text p{color:var(--gray); font-size:1.05rem; margin-top:14px;} .quote-box{margin-top:26px; padding:22px 24px; border-left:4px solid var(--orange); background:var(--off); font-weight:600;}
-
-/* ПЛИТКИ */
-.svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
-.svc-card{
-  background: #FFFFFF !important; border: none; border-radius: 14px; padding: 30px 24px;
-  transition: all .3s ease; box-shadow: 0 4px 12px rgba(10,25,47,0.06); position: relative; overflow: hidden;
-}
-.svc-card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:#FF6B00; opacity:0; transition: opacity .3s ease; }
-.svc-card:hover::before { opacity:1; }
-.svc-card:hover { transform: translateY(-6px); background:#0A192F !important; color: #FFFFFF; }
-.svc-icon{width:48px; height:48px; border-radius:12px; background:rgba(255,107,0,0.1); color:#FF6B00; display:flex; align-items:center; justify-content:center; margin-bottom:15px;}
-.svc-icon svg{width:24px; height:24px;}
-.svc-num{display:inline-block; font-weight:800; color:#FF6B00; font-size:1.2rem; margin-bottom:10px; background:rgba(255,107,0,0.12); padding:4px 12px; border-radius:20px;}
-.svc-card h3{font-size:1.08rem; margin-bottom:8px; color:#0A192F; transition: color .3s ease;} .svc-card:hover h3 { color:#FFFFFF; }
-.svc-card p{font-size:0.92rem; color:#5B6472; transition: color .3s ease;} .svc-card:hover p { color:rgba(255,255,255,0.75); }
-#for-whom { background:#FFFFFF; }
-
-.why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;} .why-card{background:rgba(255,255,255,0.05); border:1px solid var(--line); border-radius:14px; padding:30px 26px;}
-.why-card:hover{background:rgba(255,255,255,0.09);} .why-icon{width:46px; height:46px; border-radius:12px; background:rgba(255,107,0,0.16); color:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
-.why-card h3{color:var(--white); font-size:1.05rem;} .why-card p{color:rgba(255,255,255,0.72); font-size:0.93rem;}
-
-.steps-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px; text-align:center;} .step-card{background:var(--off); border:1px solid var(--line-dk); border-radius:14px; padding:30px 20px;}
-.step-num{display:block; font-size:2rem; font-weight:800; color:var(--orange);} .step-card h3{color:var(--ink);}
-
-.gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;} .g-item{border-radius:14px; overflow:hidden; aspect-ratio:4/3; cursor:zoom-in;}
-.g-item img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;} .g-item:hover img{transform:scale(1.06);}
-
-.geo-list{display:flex; flex-wrap:wrap; gap:16px; justify-content:center;} .geo-list span{background:var(--off); border:1px solid var(--line-dk); padding:12px 24px; border-radius:50px; font-weight:700;}
-
-.cta-band{background:linear-gradient(120deg, var(--navy) 0%, var(--navy-3) 100%); color:var(--white); border-radius:22px; padding:56px 48px; display:flex; justify-content:space-between; align-items:center; gap:28px; flex-wrap:wrap;}
-.cta-band h2{font-size:clamp(1.5rem,3vw,2.1rem);} .cta-band p{color:rgba(255,255,255,0.75); margin-top:10px;}
-
-form{display:grid; gap:14px; background:var(--off); padding:30px; border-radius:14px;} .row2{display:grid; grid-template-columns:1fr 1fr; gap:14px;} .field{display:grid; gap:6px;}
-label{font-size:0.84rem; font-weight:700; color:var(--navy);} input, textarea, select{border:1.5px solid var(--line-dk); background:var(--white); padding:12px 14px; border-radius:10px; font-size:0.96rem;}
-input:focus, textarea:focus, select:focus{outline:none; border-color:var(--orange);} textarea{resize:vertical; min-height:100px;}
-.consent-field{display:flex; align-items:flex-start; gap:10px;} .consent-field input[type="checkbox"]{width:20px; height:20px; accent-color:var(--orange);}
-.consent-field a{color:var(--orange); font-weight:700;}
-
-footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .foot-top{display:flex; justify-content:space-between; padding-bottom:26px; border-bottom:1px solid var(--line);}
-.foot-nav{display:flex; gap:22px;} .foot-bottom{display:flex; justify-content:space-between; padding-top:20px; font-size:0.8rem;} .foot-lang button{background:none; border:1px solid var(--line); color:rgba(255,255,255,0.7); padding:5px 10px; border-radius:999px;}
-
-/* ====== СТИЛИ ДЛЯ БАННЕРА И МОДАЛКИ ====== */
-.policy-link-inline{color:var(--gray); font-size:0.85rem; text-decoration:underline; cursor:pointer; background:none; border:none; padding:0;}
-.policy-link-inline:hover{color:var(--ink);}
-.policy-modal{position:fixed; inset:0; z-index:1100; background:rgba(5,10,20,0.72); display:none; align-items:center; justify-content:center; padding:24px;}
-.policy-modal.open{display:flex;}
-.policy-modal-inner{background:var(--white); border-radius:16px; max-width:720px; width:100%; max-height:85vh; overflow-y:auto; padding:36px 40px; position:relative;}
-.policy-modal-close{position:sticky; float:right; top:0; right:0; background:var(--off); border:none; border-radius:50%; width:36px; height:36px; cursor:pointer; color:var(--ink);}
-.policy-modal-inner h2{font-size:1.5rem; margin-bottom:18px;} .policy-modal-inner h3{font-size:1.05rem; margin:22px 0 8px;}
-.policy-modal-inner p{color:var(--gray); font-size:0.94rem; line-height:1.65;}
-.privacy-banner{position:fixed; left:0; right:0; bottom:0; z-index:1200; background:var(--navy); color:rgba(255,255,255,0.88); padding:18px 20px; transform:translateY(100%); transition:transform .35s ease;}
-.privacy-banner.show{transform:translateY(0);}
-.privacy-banner-inner{max-width:1180px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;}
-.privacy-banner p{font-size:0.88rem; max-width:760px; margin:0;} .privacy-banner a{color:var(--orange); text-decoration:underline; font-weight:700;}
-
-@media (max-width: 980px) { .svc-grid, .why-grid { grid-template-columns:1fr 1fr; } }
-@media (max-width: 768px) { section { padding:70px 0; } .about, .why-grid { grid-template-columns:1fr; } .steps-grid { grid-template-columns:1fr 1fr; } .gallery-grid { grid-template-columns:1fr 1fr; } }
-@media (max-width: 600px) { .svc-grid, .why-grid, .gallery-grid, .steps-grid { grid-template-columns:1fr; } .glass-card { padding:24px; } }
-@media (max-width: 860px) { .burger{display:block;} .navlinks{display:none;} }
-</style>
-<!-- ====== КОНЕЦ СТИЛЕЙ ====== -->
-
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -177,27 +67,30 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
           <button data-lang="fr">Français</button>
         </div>
       </div>
-      <a href="#contact" class="btn btn-orange" data-i18n="nav.cta">Zapytaj o wycenę</a>
-      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="#contact" class="btn btn-orange" data-i18n="nav.cta" style="padding:10px 18px; font-size:0.86rem;">Zapytaj o wycenę</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
-    <div class="hero-bg" style="background-image:url('images/sunset.jpg'); background-size:cover; background-position:center center; background-repeat:no-repeat;"></div>
+    <div class="hero-bg" style="background-image:url('images/sunset.jpg'); background-size:cover; background-position:center center; background-repeat:no-repeat; width:100%; height:100%;"></div>
     <div class="hero-inner">
       <div class="glass-card">
-        <span class="eyebrow" data-i18n="hero.eyebrow">PRIME CRAFT WORK · Rusztowania w Belgii</span>
-        <h1 data-i18n="hero.title">Montaż i demontaż rusztowań w Belgii</h1>
-        <p class="lead" data-i18n="hero.subtitle">Doświadczona ekipa rusztowaniowa dla firm budowlanych, przemysłowych i wykonawców generalnych.</p>
-        <div class="hero-advantages">
-          <span>Belgia</span><span>Doświadczona ekipa</span><span>C+E / HDS</span><span>B2B / podwykonawstwo</span>
-        </div>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-orange" data-i18n="hero.cta">Zapytaj o wycenę</a>
-          <a href="#projects" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Zobacz realizacje</a>
-        </div>
+      <span class="eyebrow" data-i18n="hero.eyebrow">PRIME CRAFT WORK · Rusztowania w Belgii</span>
+      <h1 data-i18n="hero.title">Montaż i demontaż rusztowań w Belgii</h1>
+      <p class="lead" data-i18n="hero.subtitle">Doświadczona ekipa rusztowaniowa dla firm budowlanych, przemysłowych i wykonawców generalnych.</p>
+      <div class="hero-advantages">
+        <span>Belgia</span>
+        <span>Doświadczona ekipa</span>
+        <span>C+E / HDS</span>
+        <span>B2B / podwykonawstwo</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-orange" data-i18n="hero.cta">Zapytaj o wycenę</a>
+        <a href="#projects" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Zobacz realizacje</a>
+      </div>
       </div>
     </div>
   </section>
@@ -206,10 +99,10 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
     <div class="wrap">
       <div class="section-head reveal"><span class="kicker" data-i18n="trust.kicker">Dlaczego my</span><h2 data-i18n="trust.title">Dlaczego warto z nami współpracować?</h2></div>
       <div class="why-grid">
-        <div class="why-card reveal"><h3 data-i18n="trust.i1.title">Doświadczenie</h3><p data-i18n="trust.i1.text">Doświadczona ekipa na budowach w Belgii.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="trust.i2.title">Bezpośrednia współpraca</h3><p data-i18n="trust.i2.text">Bez zbędnych pośredników.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="trust.i3.title">Osobisty nadzór</h3><p data-i18n="trust.i3.text">Bezpośrednia kontrola realizacji prac.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="trust.i4.title">Transport HDS</h3><p data-i18n="trust.i4.text">C+E + doświadczenie w transporcie rusztowań.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="trust.i1.title">Doświadczenie</h3><p data-i18n="trust.i1.text">Doświadczona ekipa na budowach w Belgii.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div><h3 data-i18n="trust.i2.title">Bezpośrednia współpraca</h3><p data-i18n="trust.i2.text">Bez zbędnych pośredników.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div><h3 data-i18n="trust.i3.title">Osobisty nadzór</h3><p data-i18n="trust.i3.text">Bezpośrednia kontrola realizacji prac.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><h3 data-i18n="trust.i4.title">Transport HDS</h3><p data-i18n="trust.i4.text">C+E + doświadczenie w transporcie rusztowań.</p></div>
       </div>
     </div>
   </section>
@@ -218,10 +111,10 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
     <div class="wrap">
       <div class="section-head reveal"><span class="kicker" data-i18n="services.kicker">Usługi</span><h2 data-i18n="services.title">Nasze usługi</h2></div>
       <div class="svc-grid">
-        <div class="svc-card reveal"><span class="svc-num">01</span><h3 data-i18n="services.i1.title">Montaż rusztowań</h3><p data-i18n="services.i1.text">Montaż rusztowań na obiektach przemysłowych, komercyjnych i mieszkalnych.</p></div>
-        <div class="svc-card reveal"><span class="svc-num">02</span><h3 data-i18n="services.i2.title">Demontaż rusztowań</h3><p data-i18n="services.i2.text">Bezpieczny i sprawny demontaż po zakończeniu prac.</p></div>
-        <div class="svc-card reveal"><span class="svc-num">03</span><h3 data-i18n="services.i3.title">Podwykonawstwo</h3><p data-i18n="services.i3.text">Doświadczona ekipa jako wsparcie dla firm budowlanych i wykonawców.</p></div>
-        <div class="svc-card reveal"><span class="svc-num">04</span><h3 data-i18n="services.i4.title">Transport HDS</h3><p data-i18n="services.i4.text">Transport materiałów i rusztowań z wykorzystaniem samochodu z HDS.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7M4 7h4M4 10h4M4 13h4M4 16h4M8 21V7M14 21V10M14 10h4M14 13h4M14 16h4M18 21V10M8 8h8M8 15h8"/></svg></div><span class="svc-num">01</span><h3 data-i18n="services.i1.title">Montaż rusztowań</h3><p data-i18n="services.i1.text">Montaż rusztowań na obiektach przemysłowych, komercyjnych i mieszkalnych.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19L19 5M5 5l14 14M9 5H5v4M15 19h4v-4"/></svg></div><span class="svc-num">02</span><h3 data-i18n="services.i2.title">Demontaż rusztowań</h3><p data-i18n="services.i2.text">Bezpieczny i sprawny demontaż po zakończeniu prac.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><span class="svc-num">03</span><h3 data-i18n="services.i3.title">Podwykonawstwo</h3><p data-i18n="services.i3.text">Doświadczona ekipa jako wsparcie dla firm budowlanych i wykonawców.</p></div>
+        <div class="svc-card reveal"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><span class="svc-num">04</span><h3 data-i18n="services.i4.title">Transport HDS</h3><p data-i18n="services.i4.text">Transport materiałów i rusztowań z wykorzystaniem samochodu z HDS.</p></div>
       </div>
     </div>
   </section>
@@ -240,12 +133,12 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
 
   <section id="why" class="section-dark">
     <div class="wrap">
-      <div class="section-head reveal"><span class="kicker" data-i18n="why.kicker">Dlaczego my</span><h2 data-i18n="why.title">Co nas wyróżnia</h2></div>
+      <div class="section-head reveal"><span class="kicker" data-i18n="why.kicker">Dlaczego my</span><h2 data-i18n="why.title">Co nas wyróżnia na tle innych</h2></div>
       <div class="why-grid">
-        <div class="why-card reveal"><h3 data-i18n="why.i1.title">Doświadczenie w Belgii</h3><p data-i18n="why.i1.text">Od lat pracujemy przy realizacji projektów rusztowaniowych w Belgii.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="why.i2.title">Osobista odpowiedzialność</h3><p data-i18n="why.i2.text">Pracuję na co dzień razem z zespołem na budowie.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="why.i3.title">Dodatkowo: transport z HDS</h3><p data-i18n="why.i3.text">Dysponujemy kierowcą kat. C+E z doświadczeniem.</p></div>
-        <div class="why-card reveal"><h3 data-i18n="why.i4.title">Długoterminowa współpraca</h3><p data-i18n="why.i4.text">Stabilne, wieloletnie relacje B2B.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="why.i1.title">Doświadczenie w Belgii</h3><p data-i18n="why.i1.text">Od lat pracujemy przy realizacji projektów rusztowaniowych na terenie Belgii i znamy lokalną specyfikę budów.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div><h3 data-i18n="why.i2.title">Osobista odpowiedzialność</h3><p data-i18n="why.i2.text">Pracuję na co dzień razem z zespołem na budowie i osobiście odpowiadam za prawidłową realizację prac.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="14" height="9"/><path d="M15 12h4l3 3v3h-7z"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div><h3 data-i18n="why.i3.title">Dodatkowo: transport z HDS</h3><p data-i18n="why.i3.text">Dysponujemy kierowcą kat. C+E z doświadczeniem w obsłudze samochodu z żurawiem HDS — dodatkowy atut dla Twojego projektu.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-8.13a4 4 0 110 8 4 4 0 010-8z"/></svg></div><h3 data-i18n="why.i4.title">Długoterminowa współpraca</h3><p data-i18n="why.i4.text">Zależy nam na stabilnych, wieloletnich relacjach B2B, nie na jednorazowych zleceniach.</p></div>
       </div>
     </div>
   </section>
@@ -293,7 +186,7 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
       <div class="section-head reveal"><span class="kicker" data-i18n="contact.kicker">Kontakt</span><h2 data-i18n="contact.title">Napisz do nas</h2><p data-i18n="contact.subtitle">Odpowiadamy szybko — chętnie omówimy szczegóły współpracy.</p></div>
       <div class="contact-grid contact-grid-single">
         <form id="contactForm" novalidate action="https://script.google.com/macros/s/AKfycbyFHxN8MSgq8i7x1XjUoM0EIpOejp-2xsTN_8ysJCX5-bXI_negKmwNM4Urt4QkCWR_/exec" method="POST" target="hidden-submit-frame">
-          <div class="hp-field" aria-hidden="true"><input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="hp-field" aria-hidden="true"><label for="cf-hp">Nie wypełniaj tego pola / Do not fill this field</label><input type="text" id="cf-hp" name="_gotcha" tabindex="-1" autocomplete="off"></div>
           <div class="row2">
             <div class="field"><label for="cf-name" data-i18n="contact.form.name">Imię i nazwisko</label><input id="cf-name" name="Imię i nazwisko" type="text" required minlength="2"><span class="field-error" id="err-name"></span></div>
             <div class="field"><label for="cf-email" data-i18n="contact.form.email">E-mail</label><input id="cf-email" name="Email" type="email" required><span class="field-error" id="err-email"></span></div>
@@ -327,14 +220,22 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
           <div class="field"><label for="cf-msg" data-i18n="contact.form.message">Wiadomość</label><textarea id="cf-msg" name="Wiadomość" data-i18n-placeholder="contact.form.msgPlaceholder" placeholder="Opisz swój obiekt i zakres prac" required minlength="10"></textarea><span class="field-error" id="err-msg"></span></div>
           <div class="consent-field" id="consentField"><input type="checkbox" id="cf-consent" name="Zgoda" value="tak" required><label for="cf-consent"><span data-i18n="contact.form.consentBefore">Zapoznałem/-am się z </span><a href="#" id="policyLinkForm" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="contact.form.consentAfter"> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi tego zapytania.</span></label></div>
           <span class="field-error" id="err-consent"></span>
-          <button type="submit" class="btn btn-dark" id="cf-submit" data-i18n="contact.form.submit">Wyślij zapytanie</button>
+          <button type="submit" class="btn btn-dark" id="cf-submit" data-i18n="contact.form.submit" style="justify-self:start;">Wyślij zapytanie</button>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         </form>
-        <iframe name="hidden-submit-frame" id="hiddenSubmitFrame" style="display:none;"></iframe>
+        <iframe name="hidden-submit-frame" id="hiddenSubmitFrame" style="display:none;" title="form submission target"></iframe>
       </div>
     </div>
   </section>
 </main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Zamknij"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Następne zdjęcie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lightbox-inner"><img id="lightboxImg" src="" alt=""></div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
 
 <footer>
   <div class="wrap">
@@ -361,15 +262,13 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
   </div>
 </footer>
 
-<!-- Панель согласия -->
-<div class="privacy-banner" id="privacyBanner">
+<div class="privacy-banner" id="privacyBanner" role="dialog" aria-live="polite" aria-label="Powiadomienie o przetwarzaniu danych">
   <div class="privacy-banner-inner">
     <p><span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span></p>
-    <button type="button" class="btn btn-orange" id="privacyBannerOk" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" data-i18n="privacyBanner.ok">Rozumiem</button>
+    <button type="button" class="btn btn-orange" id="privacyBannerOk" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" data-i18n="privacyBanner.ok" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
   </div>
 </div>
 
-<!-- Модальное окно политики -->
 <div class="policy-modal" id="policyModal" role="dialog" aria-modal="true" aria-label="Polityka prywatności">
   <div class="policy-modal-inner">
     <button class="policy-modal-close" id="policyModalClose" aria-label="Zamknij"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -393,5 +292,6 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0;} .f
 </div>
 
 <script src="js/main.js"></script>
+<noscript><style>.reveal{opacity:1 !important; transform:none !important;}</style></noscript>
 </body>
 </html>
