@@ -51,35 +51,11 @@ header{position:sticky; top:0; z-index:100; background:var(--navy); box-shadow:0
 .burger{display:none; background:none; border:none; padding:6px;}
 .burger span{display:block; width:24px; height:2px; background:var(--white); margin:5px 0; border-radius:2px;}
 
-/* HERO - ИСПРАВЛЕНО РАСТЯГИВАНИЕ И ПОВТОРЫ */
-.hero{
-  position:relative; 
-  background:var(--navy); 
-  overflow:hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-}
-.hero-bg{
-  position:absolute; inset:0; z-index:0;
-  background-color: var(--navy);
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important; /* ЗАПРЕТ ПОВТОРА ПЛИТКОЙ */
-}
+/* HERO */
+.hero{position:relative; background:var(--navy); overflow:hidden; display:flex; align-items:center; justify-content:center; min-height:80vh;}
+.hero-bg{position:absolute; inset:0; z-index:0; background-color: var(--navy); background-size: cover !important; background-position: center center !important; background-repeat: no-repeat !important;}
 .hero-inner{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:100px 28px; width:100%;}
-.glass-card{
-  background:rgba(10,25,47,0.35);
-  -webkit-backdrop-filter:blur(20px) saturate(160%);
-  backdrop-filter:blur(20px) saturate(160%);
-  border:1px solid rgba(255,255,255,0.3);
-  border-radius:26px;
-  padding:44px 44px;
-  box-shadow:0 30px 70px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.25);
-  max-width:720px;
-  width: 100%;
-}
+.glass-card{background:rgba(10,25,47,0.35); -webkit-backdrop-filter:blur(20px) saturate(160%); backdrop-filter:blur(20px) saturate(160%); border:1px solid rgba(255,255,255,0.3); border-radius:26px; padding:44px 44px; box-shadow:0 30px 70px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.25); max-width:720px; width:100%;}
 .eyebrow{display:inline-block; color:var(--gold); font-weight:700; font-size:0.85rem; letter-spacing:0.05em; border:1px solid rgba(245,166,35,0.4); background:rgba(245,166,35,0.08); padding:6px 14px; border-radius:999px; margin-bottom:24px;}
 .hero h1{color:var(--white); font-size:clamp(2.2rem,5vw,3.4rem); max-width:18ch;}
 .hero p.lead{color:rgba(255,255,255,0.85); font-size:1.12rem; max-width:56ch; margin:22px 0 20px;}
@@ -104,19 +80,38 @@ section{padding:96px 0;}
 .about-text p{color:var(--gray); font-size:1.05rem; margin-top:14px;}
 .quote-box{margin-top:26px; padding:22px 24px; border-left:4px solid var(--orange); background:var(--off); border-radius:0 10px 10px 0; font-size:1rem; color:var(--ink); font-weight:600;}
 
-/* SERVICES & FOR WHOM TILES */
+/* SERVICES & FOR WHOM - ЕДИНЫЙ СТИЛЬ, БЕЗ РАМОК, БЕЛЫЙ ФОН, ТЁМНЫЙ ПРИ НАВЕДЕНИИ */
 .svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
-.svc-card{background:var(--white); border:1px solid var(--line-dk); border-radius:var(--radius); padding:30px 24px; transition:transform .3s ease, box-shadow .3s ease; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(10, 25, 47, 0.04);}
+.svc-card{
+  background: var(--white); /* Белый фон */
+  border: none; /* Без рамок */
+  border-radius: var(--radius);
+  padding: 30px 24px;
+  transition: transform .3s ease, background .3s ease, color .3s ease, box-shadow .3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(10, 25, 47, 0.06);
+}
 .svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--orange); opacity: 0; transition: opacity .3s ease; }
 .svc-card:hover::before { opacity: 1; }
-.svc-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(10,25,47,0.1); }
-.svc-icon{width:48px; height:48px; border-radius:12px; background:rgba(255,107,0,0.1); color:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:15px;}
+.svc-card:hover { 
+  transform: translateY(-6px); 
+  background: var(--navy); /* Тёмный фон при наведении */
+  box-shadow: 0 20px 40px rgba(10,25,47,0.15); 
+}
+.svc-icon{width:48px; height:48px; border-radius:12px; background:rgba(255,107,0,0.1); color:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:15px; transition: background .3s ease;}
+.svc-card:hover .svc-icon { background: rgba(255,107,0,0.2); } /* Иконка чуть ярче на тёмном фоне */
 .svc-icon svg{width:24px; height:24px;}
-.svc-num{display: inline-block; font-weight: 800; color: var(--orange); font-size: 1.2rem; margin-bottom: 10px; background: rgba(255,107,0,0.1); padding: 4px 12px; border-radius: 20px;}
-.svc-card h3{font-size:1.08rem; margin-bottom:8px;}
-.svc-card p{color:var(--gray); font-size:0.92rem;}
-#for-whom .svc-card { background: var(--off); border: none; }
-#for-whom .svc-card:hover { background: var(--white); }
+.svc-num{display: inline-block; font-weight: 800; color: var(--orange); font-size: 1.2rem; margin-bottom: 10px; background: rgba(255,107,0,0.12); padding: 4px 12px; border-radius: 20px; transition: background .3s ease;}
+.svc-card:hover .svc-num { background: rgba(255,107,0,0.2); }
+.svc-card h3{font-size:1.08rem; margin-bottom:8px; color: var(--ink); transition: color .3s ease;}
+.svc-card:hover h3 { color: var(--white); }
+.svc-card p{color:var(--gray); font-size:0.92rem; transition: color .3s ease;}
+.svc-card:hover p { color: rgba(255,255,255,0.75); }
+
+/* Фон секции Dla kogo делаем белым, чтобы карточки выделялись */
+#for-whom { background: var(--white); }
+#for-whom .svc-card { background: var(--white); } /* Наследует общий стиль */
 
 /* WHY US */
 .why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
@@ -129,7 +124,7 @@ section{padding:96px 0;}
 
 /* PROCESS */
 .steps-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px; text-align:center;}
-.step-card{background:var(--white); border:1px solid var(--line-dk); border-radius:var(--radius); padding:30px 20px;}
+.step-card{background:var(--off); border:1px solid var(--line-dk); border-radius:var(--radius); padding:30px 20px;}
 .step-num{display:block; font-size:2rem; font-weight:800; color:var(--orange); margin-bottom:10px;}
 .step-card h3{font-size:1.05rem; color:var(--ink);}
 
