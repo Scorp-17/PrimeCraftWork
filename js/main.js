@@ -21,8 +21,6 @@ try {
       "forwhom.i2":"Generalni wykonawcy","forwhom.i2.text":"Możemy pracować jako podwykonawca rusztowań.",
       "forwhom.i3":"Firmy przemysłowe","forwhom.i3.text":"Rusztowania przemysłowe o różnych wysokościach.",
       "forwhom.i4":"Firmy rusztowaniowe","forwhom.i4.text":"Dodatkowa ręka do pracy i profesjonalna ekipa monterów.",
-      "forwhom.cta.title":"Potrzebujesz dodatkowej ekipy rusztowaniowej?",
-      "forwhom.cta.text":"→ Możemy występować jako subcontractor.",
       "why.kicker":"Dlaczego my","why.title":"Co nas wyróżnia na tle innych",
       "why.i1.title":"Doświadczenie w Belgii","why.i1.text":"Od lat pracujemy przy realizacji projektów rusztowaniowych na terenie Belgii i znamy lokalną specyfikę budów.",
       "why.i2.title":"Osobista odpowiedzialność","why.i2.text":"Pracuję na co dzień razem z zespołem na budowie i osobiście odpowiadam za prawidłową realizację prac.",
@@ -81,8 +79,6 @@ try {
       "forwhom.i2":"General contractors","forwhom.i2.text":"We can work as a scaffolding subcontractor.",
       "forwhom.i3":"Industrial companies","forwhom.i3.text":"Industrial scaffolding at various heights.",
       "forwhom.i4":"Scaffolding companies","forwhom.i4.text":"Extra hands and a professional crew of assemblers.",
-      "forwhom.cta.title":"Need an additional scaffolding crew?",
-      "forwhom.cta.text":"→ We can act as a subcontractor.",
       "why.kicker":"Why us","why.title":"What sets us apart",
       "why.i1.title":"Experience in Belgium","why.i1.text":"We have been working on scaffolding projects in Belgium for years and know the local specifics.",
       "why.i2.title":"Personal accountability","why.i2.text":"I work on site with the team every day and take personal responsibility for the correct execution.",
@@ -119,27 +115,140 @@ try {
       "policy.h7":"Voluntary nature","policy.p7":"Data is voluntary but necessary to respond.",
       "privacyBanner.text":"This site processes personal data in accordance with our ",
       "privacyBanner.textEnd":".","privacyBanner.ok":"Got it"
+    },
+    nl: {
+      "nav.about":"Over ons","nav.services":"Diensten","nav.why":"Waarom wij","nav.projects":"Projecten","nav.contact":"Contact","nav.cta":"Vraag een offerte aan",
+      "hero.eyebrow":"PRIME CRAFT WORK · Steigers in België",
+      "hero.title":"Montage en demontage van steigers in België",
+      "hero.subtitle":"Ervaren steigerteam voor bouwbedrijven, industriële bedrijven en algemene aannemers.",
+      "hero.cta":"Vraag een offerte aan","hero.ctaSecondary":"Bekijk projecten",
+      "trust.kicker":"Waarom wij","trust.title":"Waarom met ons samenwerken?",
+      "trust.i1.title":"Ervaring","trust.i1.text":"Ervaren team op bouwplaatsen in België.",
+      "trust.i2.title":"Directe samenwerking","trust.i2.text":"Zonder onnodige tussenpersonen.",
+      "trust.i3.title":"Persoonlijk toezicht","trust.i3.text":"Directe controle op de uitvoering.",
+      "trust.i4.title":"HDS Transport","trust.i4.text":"C+E + ervaring in steigertransport.",
+      "services.kicker":"Diensten","services.title":"Onze diensten",
+      "services.i1.title":"Montage van steigers","services.i1.text":"Montage van steigers op industriële, commerciële en residentiële locaties.",
+      "services.i2.title":"Demontage van steigers","services.i2.text":"Veilige en efficiënte demontage na afronding van de werkzaamheden.",
+      "services.i3.title":"Onderaanneming","services.i3.text":"Ervaren team als ondersteuning voor bouwbedrijven en aannemers.",
+      "services.i4.title":"HDS Transport","services.i4.text":"Transport van materialen en steigers met behulp van een HDS-vrachtwagen.",
+      "forwhom.kicker":"Voor wie","forwhom.title":"Voor wie werken we?",
+      "forwhom.i1":"Bouwbedrijven","forwhom.i1.text":"Ondersteuning op de bouwplaats waar steigers nodig zijn.",
+      "forwhom.i2":"Algemene aannemers","forwhom.i2.text":"Wij kunnen werken als onderaannemer voor steigers.",
+      "forwhom.i3":"Industriële bedrijven","forwhom.i3.text":"Industriële steigers op verschillende hoogtes.",
+      "forwhom.i4":"Steigerbedrijven","forwhom.i4.text":"Extra handen en een professioneel monteursteam.",
+      "why.kicker":"Waarom wij","why.title":"Wat ons onderscheidt",
+      "why.i1.title":"Ervaring in België","why.i1.text":"Wij werken al jaren aan steigerprojecten in België en kennen de lokale specificiteit.",
+      "why.i2.title":"Persoonlijke verantwoordelijkheid","why.i2.text":"Ik werk dagelijks met het team op de bouwplaats en ben persoonlijk verantwoordelijk voor de correcte uitvoering.",
+      "why.i3.title":"Extra: HDS-transport","why.i3.text":"Wij beschikken over een chauffeur met C+E en ervaring met het bedienen van een vrachtwagenkraan (HDS) — een extra voordeel voor uw project.",
+      "why.i4.title":"Langdurige samenwerking","why.i4.text":"Wij richten ons op stabiele, langdurige B2B-relaties, niet op eenmalige klussen.",
+      "process.kicker":"Proces","process.title":"Hoe verloopt de samenwerking?",
+      "process.i1":"Contact","process.i2":"Bepalen van de werkzaamheden","process.i3":"Offerte","process.i4":"Uitvoering","process.i5":"Oplevering",
+      "projects.kicker":"Projecten","projects.title":"Onze realisaties",
+      "safety.kicker":"Veiligheid","safety.title":"Veiligheid en professionaliteit","safety.subtitle":"Wij werken volgens de BHP-voorschriften en zorgen voor de gezondheid en het leven van onze medewerkers en de omgeving.",
+      "safety.i1":"Wij hebben kennis en ervaring op het gebied van veiligheid (VCA).",
+      "safety.i2":"Aansprakelijkheidsverzekering tijdens de werken.",
+      "safety.i3":"Regelmatige BHP-trainingen en bevoegdheden voor werken op hoogte.",
+      "safety.i4":"Volledige uitrusting met persoonlijke beschermingsmiddelen.",
+      "cta.title":"Heeft u een betrouwbaar steigerteam nodig?","cta.text":"Vertel ons over uw project.","cta.button":"Vraag een offerte aan",
+      "contact.kicker":"Contact","contact.title":"Schrijf ons","contact.subtitle":"Wij antwoorden snel — bespreken graag de details.",
+      "contact.form.name":"Naam en achternaam","contact.form.email":"E-mail","contact.form.phone":"Telefoon","contact.form.company":"Bedrijf",
+      "contact.form.location":"Locatie van de bouwplaats","contact.form.type":"Type project","contact.form.scope":"Reikwijdte van de werken","contact.form.term":"Geplande datum",
+      "contact.form.termPlaceholder":"JJJJ-MM-DD",
+      "contact.form.type1":"Industriële bouw","contact.form.type2":"Residentieel gebouw","contact.form.type3":"Commercieel gebouw","contact.form.type4":"Anders",
+      "contact.form.scope1":"Montage","contact.form.scope2":"Demontage","contact.form.scope3":"Montage + demontage","contact.form.scope4":"HDS Transport",
+      "contact.form.message":"Bericht","contact.form.msgPlaceholder":"Beschrijf uw object en de reikwijdte van de werken","contact.form.submit":"Verstuur aanvraag",
+      "contact.form.consentBefore":"Ik heb de ","contact.form.policyLink":"Privacybeleid",
+      "contact.form.consentAfter":" gelezen en geef toestemming voor de verwerking van mijn persoonsgegevens voor de behandeling van deze aanvraag.",
+      "contact.form.consentError":"Bevestig uw toestemming voor gegevensverwerking om te verzenden.",
+      "footer.copy":"© 2026 PrimeCraftWork. Alle rechten voorbehouden.",
+      "geo.kicker":"Geografie","geo.title":"Waar werken we?","geo.subtitle":"🇧🇪 België — het hele land.","geo.other":"en andere regio's",
+      "policy.title":"Privacybeleid","policy.intro":"Dit privacybeleid beschrijft hoe PrimeCraftWork persoonsgegevens verwerkt van personen die het contactformulier op deze website gebruiken.",
+      "policy.h1":"Verwerkingsverantwoordelijke","policy.p1":"De verwerkingsverantwoordelijke is PrimeCraftWork. Contact: primecraftwork1@gmail.com.",
+      "policy.h2":"Reikwijdte en doel","policy.p2":"Verzameld: naam, e-mail, telefoon (optioneel), bedrijf (optioneel), bericht en extra projectvelden.",
+      "policy.h3":"Rechtsgrondslag","policy.p3":"Vrijwillige toestemming (art. 6 lid 1 sub a AVG).",
+      "policy.h4":"Ontvangers van gegevens","policy.p4":"Gegevens worden opgeslagen in Google (Sheets, Gmail). Niet verkocht.",
+      "policy.h5":"Bewaartermijn","policy.p5":"Maximaal 24 maanden na het laatste contact.",
+      "policy.h6":"Rechten van de persoon","policy.p6":"Recht op inzage, rectificatie, verwijdering, beperking, overdracht, intrekking van toestemming en het indienen van een klacht.",
+      "policy.h7":"Vrijwillige aard","policy.p7":"Gegevens zijn vrijwillig, maar noodzakelijk om te reageren.",
+      "privacyBanner.text":"Deze site verwerkt persoonsgegevens in overeenstemming met ons ",
+      "privacyBanner.textEnd":".","privacyBanner.ok":"Begrepen"
+    },
+    fr: {
+      "nav.about":"À propos","nav.services":"Services","nav.why":"Pourquoi nous","nav.projects":"Réalisations","nav.contact":"Contact","nav.cta":"Demander un devis",
+      "hero.eyebrow":"PRIME CRAFT WORK · Échafaudages en Belgique",
+      "hero.title":"Montage et démontage d'échafaudages en Belgique",
+      "hero.subtitle":"Équipe expérimentée pour les entreprises de construction, industrielles et les entrepreneurs généraux.",
+      "hero.cta":"Demander un devis","hero.ctaSecondary":"Voir les réalisations",
+      "trust.kicker":"Pourquoi nous","trust.title":"Pourquoi travailler avec nous ?",
+      "trust.i1.title":"Expérience","trust.i1.text":"Équipe expérimentée sur les chantiers en Belgique.",
+      "trust.i2.title":"Coopération directe","trust.i2.text":"Sans intermédiaires inutiles.",
+      "trust.i3.title":"Supervision personnelle","trust.i3.text":"Contrôle direct de l'exécution des travaux.",
+      "trust.i4.title":"Transport HDS","trust.i4.text":"C+E + expérience dans le transport d'échafaudages.",
+      "services.kicker":"Services","services.title":"Nos services",
+      "services.i1.title":"Montage d'échafaudages","services.i1.text":"Montage d'échafaudages sur des sites industriels, commerciaux et résidentiels.",
+      "services.i2.title":"Démontage d'échafaudages","services.i2.text":"Démontage sûr et efficace après la fin des travaux.",
+      "services.i3.title":"Sous-traitance","services.i3.text":"Équipe expérimentée en soutien pour les entreprises de construction et les entrepreneurs.",
+      "services.i4.title":"Transport HDS","services.i4.text":"Transport de matériaux et d'échafaudages à l'aide d'un camion HDS.",
+      "forwhom.kicker":"Pour qui","forwhom.title":"Pour qui travaillons-nous ?",
+      "forwhom.i1":"Entreprises de construction","forwhom.i1.text":"Soutien sur le chantier là où des échafaudages sont nécessaires.",
+      "forwhom.i2":"Entrepreneurs généraux","forwhom.i2.text":"Nous pouvons travailler comme sous-traitant en échafaudage.",
+      "forwhom.i3":"Entreprises industrielles","forwhom.i3.text":"Échafaudages industriels à différentes hauteurs.",
+      "forwhom.i4":"Entreprises d'échafaudage","forwhom.i4.text":"Mains supplémentaires et équipe de monteurs professionnels.",
+      "why.kicker":"Pourquoi nous","why.title":"Ce qui nous distingue",
+      "why.i1.title":"Expérience en Belgique","why.i1.text":"Nous travaillons sur des projets d'échafaudage en Belgique depuis des années et connaissons les spécificités locales.",
+      "why.i2.title":"Responsabilité personnelle","why.i2.text":"Je travaille quotidiennement avec l'équipe sur le chantier et je suis personnellement responsable de la bonne exécution.",
+      "why.i3.title":"Bonus : transport HDS","why.i3.text":"Nous avons un chauffeur C+E expérimenté dans l'utilisation d'une grue camion (HDS) — un atout supplémentaire pour votre projet.",
+      "why.i4.title":"Coopération à long terme","why.i4.text":"Nous nous concentrons sur des relations B2B stables et à long terme, et non sur des missions ponctuelles.",
+      "process.kicker":"Processus","process.title":"Comment se déroule la collaboration ?",
+      "process.i1":"Contact","process.i2":"Détermination de la portée des travaux","process.i3":"Devis","process.i4":"Réalisation","process.i5":"Réception des travaux",
+      "projects.kicker":"Réalisations","projects.title":"Nos réalisations",
+      "safety.kicker":"Sécurité","safety.title":"Sécurité et professionnalisme","safety.subtitle":"Nous travaillons conformément aux exigences BHP, en veillant à la santé et à la vie de nos employés et de l'environnement.",
+      "safety.i1":"Nous avons des connaissances et de l'expérience dans le domaine de la sécurité (VCA).",
+      "safety.i2":"Assurance responsabilité civile pendant les travaux.",
+      "safety.i3":"Formations BHP régulières et qualifications pour le travail en hauteur.",
+      "safety.i4":"Équipement complet en équipements de protection individuelle.",
+      "cta.title":"Besoin d'une équipe d'échafaudage fiable ?","cta.text":"Parlez-nous de votre projet.","cta.button":"Demander un devis",
+      "contact.kicker":"Contact","contact.title":"Écrivez-nous","contact.subtitle":"Nous répondons rapidement — heureux de discuter des détails.",
+      "contact.form.name":"Nom et prénom","contact.form.email":"E-mail","contact.form.phone":"Téléphone","contact.form.company":"Entreprise",
+      "contact.form.location":"Localisation du chantier","contact.form.type":"Type de projet","contact.form.scope":"Portée des travaux","contact.form.term":"Date prévue",
+      "contact.form.termPlaceholder":"AAAA-MM-JJ",
+      "contact.form.type1":"Construction industrielle","contact.form.type2":"Bâtiment résidentiel","contact.form.type3":"Bâtiment commercial","contact.form.type4":"Autre",
+      "contact.form.scope1":"Montage","contact.form.scope2":"Démontage","contact.form.scope3":"Montage + démontage","contact.form.scope4":"Transport HDS",
+      "contact.form.message":"Message","contact.form.msgPlaceholder":"Décrivez votre objet et la portée des travaux","contact.form.submit":"Envoyer la demande",
+      "contact.form.consentBefore":"J'ai lu la ","contact.form.policyLink":"Politique de confidentialité",
+      "contact.form.consentAfter":" et je consens au traitement de mes données personnelles pour traiter cette demande.",
+      "contact.form.consentError":"Veuillez confirmer votre consentement au traitement des données.",
+      "footer.copy":"© 2026 PrimeCraftWork. Tous droits réservés.",
+      "geo.kicker":"Géographie","geo.title":"Où travaillons-nous ?","geo.subtitle":"🇧🇪 Belgique — tout le pays.","geo.other":"et d'autres régions",
+      "policy.title":"Politique de confidentialité","policy.intro":"Cette politique de confidentialité décrit la manière dont PrimeCraftWork traite les données personnelles des personnes utilisant le formulaire de contact sur ce site.",
+      "policy.h1":"Responsable du traitement","policy.p1":"Le responsable du traitement est PrimeCraftWork. Contact : primecraftwork1@gmail.com.",
+      "policy.h2":"Portée et finalité","policy.p2":"Collectées : nom, e-mail, téléphone (facultatif), entreprise (facultatif), message et champs supplémentaires du projet.",
+      "policy.h3":"Base juridique","policy.p3":"Consentement volontaire (art. 6, par. 1, point a) RGPD).",
+      "policy.h4":"Destinataires des données","policy.p4":"Les données sont stockées dans Google (Sheets, Gmail). Non vendues.",
+      "policy.h5":"Durée de conservation","policy.p5":"Maximum 24 mois après le dernier contact.",
+      "policy.h6":"Droits de la personne","policy.p6":"Accès, rectification, suppression, limitation, transfert, retrait du consentement et dépôt d'une plainte.",
+      "policy.h7":"Nature volontaire","policy.p7":"Les données sont volontaires mais nécessaires pour répondre.",
+      "privacyBanner.text":"Ce site traite les données personnelles conformément à notre ",
+      "privacyBanner.textEnd":".","privacyBanner.ok":"Compris"
     }
   };
 
   function applyLang(lang){
     document.documentElement.lang = lang;
     
-    // Обновляем все элементы с data-i18n
     var nodes = document.querySelectorAll('[data-i18n]');
     for(var i=0;i<nodes.length;i++){
       var key = nodes[i].getAttribute('data-i18n');
       if(dict[lang][key] !== undefined) nodes[i].textContent = dict[lang][key];
     }
     
-    // Обновляем ВСЕ option элементы в выпадающих списках
     var options = document.querySelectorAll('option[data-i18n]');
     for(var o=0; o<options.length; o++){
       var optKey = options[o].getAttribute('data-i18n');
       if(dict[lang][optKey] !== undefined) options[o].textContent = dict[lang][optKey];
     }
 
-    // Обновляем placeholder
     var ph = document.querySelectorAll('[data-i18n-placeholder]');
     for(var j=0;j<ph.length;j++){
       var key2 = ph[j].getAttribute('data-i18n-placeholder');
@@ -155,11 +264,9 @@ try {
     try{ localStorage.setItem('pcw_lang', lang); }catch(e){}
   }
 
-  // Инициализация языка
   var initialLang = 'pl';
-  try{ var saved = localStorage.getItem('pcw_lang'); if(saved === 'pl' || saved === 'en') initialLang = saved; }catch(e){}
+  try{ var saved = localStorage.getItem('pcw_lang'); if(saved === 'pl' || saved === 'en' || saved === 'nl' || saved === 'fr') initialLang = saved; }catch(e){}
 
-  // Принудительный повторный запуск перевода после полной загрузки DOM (чтобы форма точно перевелась)
   function initLang(){ applyLang(initialLang); }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initLang);
@@ -227,12 +334,12 @@ try {
   if(form){
     var formLoadedAt = Date.now(); var submitBtn = document.getElementById('cf-submit'); var statusEl = document.getElementById('formStatus'); var originalSubmitLabel = submitBtn.textContent;
     var fieldsCfg = [
-      { id:'cf-name', errId:'err-name', validate: function(v){ if(!v.trim()) return { pl:'Podaj imię i nazwisko.', en:'Please enter your name.' }; if(v.trim().length < 2) return { pl:'Imię jest za krótkie.', en:'Name is too short.' }; return null; } },
-      { id:'cf-email', errId:'err-email', validate: function(v){ var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; if(!v.trim()) return { pl:'Podaj adres e-mail.', en:'Please enter your email.' }; if(!re.test(v.trim())) return { pl:'Nieprawidłowy adres e-mail.', en:'Invalid email address.' }; return null; } },
-      { id:'cf-phone', errId:'err-phone', validate: function(v){ if(!v.trim()) return null; var re = /^[+()\d\s-]{6,20}$/; if(!re.test(v.trim())) return { pl:'Nieprawidłowy numer telefonu.', en:'Invalid phone number.' }; return null; } },
-      { id:'cf-msg', errId:'err-msg', validate: function(v){ if(!v.trim()) return { pl:'Opisz krótko zakres prac.', en:'Please describe the scope of work.' }; if(v.trim().length < 10) return { pl:'Wiadomość jest za krótka.', en:'Message is too short.' }; return null; } }
+      { id:'cf-name', errId:'err-name', validate: function(v){ if(!v.trim()) return { pl:'Podaj imię i nazwisko.', en:'Please enter your name.', nl:'Voer uw naam in.', fr:'Veuillez saisir votre nom.' }; if(v.trim().length < 2) return { pl:'Imię jest za krótkie.', en:'Name is too short.', nl:'Naam is te kort.', fr:'Le nom est trop court.' }; return null; } },
+      { id:'cf-email', errId:'err-email', validate: function(v){ var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; if(!v.trim()) return { pl:'Podaj adres e-mail.', en:'Please enter your email.', nl:'Voer uw e-mailadres in.', fr:'Veuillez saisir votre e-mail.' }; if(!re.test(v.trim())) return { pl:'Nieprawidłowy adres e-mail.', en:'Invalid email address.', nl:'Ongeldig e-mailadres.', fr:'Adresse e-mail invalide.' }; return null; } },
+      { id:'cf-phone', errId:'err-phone', validate: function(v){ if(!v.trim()) return null; var re = /^[+()\d\s-]{6,20}$/; if(!re.test(v.trim())) return { pl:'Nieprawidłowy numer telefonu.', en:'Invalid phone number.', nl:'Ongeldig telefoonnummer.', fr:'Numéro de téléphone invalide.' }; return null; } },
+      { id:'cf-msg', errId:'err-msg', validate: function(v){ if(!v.trim()) return { pl:'Opisz krótko zakres prac.', en:'Please describe the scope of work.', nl:'Beschrijf kort de reikwijdte van de werken.', fr:'Veuillez décrire la portée des travaux.' }; if(v.trim().length < 10) return { pl:'Wiadomość jest za krótka.', en:'Message is too short.', nl:'Bericht is te kort.', fr:'Le message est trop court.' }; return null; } }
     ];
-    function currentLang(){ return document.documentElement.lang === 'en' ? 'en' : 'pl'; }
+    function currentLang(){ return document.documentElement.lang === 'en' ? 'en' : document.documentElement.lang === 'nl' ? 'nl' : document.documentElement.lang === 'fr' ? 'fr' : 'pl'; }
     function setFieldError(cfg, message){ var input = document.getElementById(cfg.id); var errEl = document.getElementById(cfg.errId); var wrap = input.closest('.field'); if(message){ if(wrap) wrap.classList.add('has-error'); if(errEl) errEl.textContent = message[currentLang()]; return false; } if(wrap) wrap.classList.remove('has-error'); if(errEl) errEl.textContent = ''; return true; }
     function validateForm(){ var allValid = true; fieldsCfg.forEach(function(cfg){ var input = document.getElementById(cfg.id); var error = cfg.validate(input.value); var ok = setFieldError(cfg, error); if(!ok) allValid = false; }); var consentBox = document.getElementById('cf-consent'); var consentWrap = document.getElementById('consentField'); var consentErr = document.getElementById('err-consent'); if(consentBox && !consentBox.checked){ if(consentWrap) consentWrap.classList.add('has-error'); if(consentErr) consentErr.textContent = dict[currentLang()]['contact.form.consentError']; allValid = false; } else { if(consentWrap) consentWrap.classList.remove('has-error'); if(consentErr) consentErr.textContent = ''; } return allValid; }
     fieldsCfg.forEach(function(cfg){ var input = document.getElementById(cfg.id); input.addEventListener('blur', function(){ setFieldError(cfg, cfg.validate(input.value)); }); input.addEventListener('input', function(){ var wrap = input.closest('.field'); if(wrap && wrap.classList.contains('has-error')){ setFieldError(cfg, cfg.validate(input.value)); } }); });
@@ -250,19 +357,19 @@ try {
     var privacyBanner = document.getElementById('privacyBanner'); var privacyBannerOk = document.getElementById('privacyBannerOk'); var privacyBannerLink = document.getElementById('privacyBannerLink');
     if(privacyBanner){ var alreadyAccepted = false; try{ alreadyAccepted = localStorage.getItem('pcw_privacy_ack') === '1'; }catch(err){} if(!alreadyAccepted){ setTimeout(function(){ privacyBanner.classList.add('show'); }, 400); } if(privacyBannerOk){ privacyBannerOk.addEventListener('click', function(){ privacyBanner.classList.remove('show'); try{ localStorage.setItem('pcw_privacy_ack', '1'); }catch(err){} }); } if(privacyBannerLink) privacyBannerLink.addEventListener('click', openPolicyModal); }
 
-    function showStatus(kind, textPl, textEn){ statusEl.className = 'form-status ' + kind; statusEl.textContent = currentLang() === 'pl' ? textPl : textEn; }
+    function showStatus(kind, textPl, textEn){ statusEl.className = 'form-status ' + kind; statusEl.textContent = currentLang() === 'pl' ? textPl : currentLang() === 'en' ? textEn : currentLang() === 'nl' ? textPl : textEn; }
 
     form.addEventListener('submit', function(e){
       e.preventDefault(); showStatus('', '', '');
-      var honey = document.getElementById('cf-hp'); if(honey && honey.value){ showStatus('success', 'Dziękujemy! Wiadomość została wysłana.', 'Thank you! Your message has been sent.'); form.reset(); return; }
-      if(Date.now() - formLoadedAt < 3000){ showStatus('error', 'Spróbuj ponownie za chwilę.', 'Please try again in a moment.'); return; }
+      var honey = document.getElementById('cf-hp'); if(honey && honey.value){ showStatus('success', 'Dziękujemy! Wiadomość została wysłana.', 'Thank you! Your message has been sent.', 'Bedankt! Uw bericht is verzonden.', 'Merci ! Votre message a été envoyé.'); form.reset(); return; }
+      if(Date.now() - formLoadedAt < 3000){ showStatus('error', 'Spróbuj ponownie za chwilę.', 'Please try again in a moment.', 'Probeer het over een moment opnieuw.', 'Veuillez réessayer dans un instant.'); return; }
       var lastSubmit = 0; try{ lastSubmit = parseInt(localStorage.getItem('pcw_last_submit') || '0', 10); }catch(err){}
       var secondsLeft = Math.ceil((60000 - (Date.now() - lastSubmit)) / 1000);
-      if(lastSubmit && secondsLeft > 0){ showStatus('error', 'Wiadomość już została wysłana. Spróbuj ponownie za ' + secondsLeft + ' s.', 'A message was already sent. Please try again in ' + secondsLeft + 's.'); return; }
-      if(!validateForm()){ showStatus('error', 'Popraw zaznaczone pola.', 'Please fix the highlighted fields.'); return; }
-      submitBtn.disabled = true; submitBtn.textContent = currentLang() === 'pl' ? 'Wysyłanie...' : 'Sending...'; try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
+      if(lastSubmit && secondsLeft > 0){ showStatus('error', 'Wiadomość już została wysłana. Spróbuj ponownie za ' + secondsLeft + ' s.', 'A message was already sent. Please try again in ' + secondsLeft + 's.', 'Er is al een bericht verzonden. Probeer het opnieuw over ' + secondsLeft + ' s.', 'Un message a déjà été envoyé. Veuillez réessayer dans ' + secondsLeft + ' s.'); return; }
+      if(!validateForm()){ showStatus('error', 'Popraw zaznaczone pola.', 'Please fix the highlighted fields.', 'Corrigeer de gemarkeerde velden.', 'Veuillez corriger les champs surlignés.'); return; }
+      submitBtn.disabled = true; submitBtn.textContent = currentLang() === 'pl' ? 'Wysyłanie...' : currentLang() === 'en' ? 'Sending...' : currentLang() === 'nl' ? 'Verzenden...' : 'Envoi en cours...'; try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
       var frame = document.getElementById('hiddenSubmitFrame'); var settled = false;
-      function finishSubmit(){ if(settled) return; settled = true; frame.removeEventListener('load', onFrameLoad); showStatus('success', 'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.', 'Thank you! Your message has been sent — we will reply as soon as possible.'); form.reset(); submitBtn.disabled = false; submitBtn.textContent = originalSubmitLabel; }
+      function finishSubmit(){ if(settled) return; settled = true; frame.removeEventListener('load', onFrameLoad); showStatus('success', 'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.', 'Thank you! Your message has been sent — we will reply as soon as possible.', 'Bedankt! Uw bericht is verzonden — wij antwoorden zo snel mogelijk.', 'Merci ! Votre message a été envoyé — nous répondrons dès que possible.'); form.reset(); submitBtn.disabled = false; submitBtn.textContent = originalSubmitLabel; }
       function onFrameLoad(){ finishSubmit(); }
       frame.addEventListener('load', onFrameLoad);
       setTimeout(finishSubmit, 6000);
