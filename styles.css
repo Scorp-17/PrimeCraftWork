@@ -51,7 +51,7 @@ header{position:sticky; top:0; z-index:100; background:var(--navy); box-shadow:0
 .burger{display:none; background:none; border:none; padding:6px;}
 .burger span{display:block; width:24px; height:2px; background:var(--white); margin:5px 0; border-radius:2px;}
 
-/* HERO: ФИКС РАСТЯГИВАНИЯ ФОТО + АДАПТИВ */
+/* HERO - ИСПРАВЛЕНО РАСТЯГИВАНИЕ И ПОВТОРЫ */
 .hero{
   position:relative; 
   background:var(--navy); 
@@ -59,14 +59,14 @@ header{position:sticky; top:0; z-index:100; background:var(--navy); box-shadow:0
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 85vh; /* Высота 85% экрана на десктопе */
+  min-height: 80vh;
 }
 .hero-bg{
   position:absolute; inset:0; z-index:0;
   background-color: var(--navy);
-  background-size: cover; /* ОБЯЗАТЕЛЬНО! Не растягивает, а красиво кадрирует */
-  background-position: center center; /* Центрирует фотографию */
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important; /* ЗАПРЕТ ПОВТОРА ПЛИТКОЙ */
 }
 .hero-inner{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:100px 28px; width:100%;}
 .glass-card{
@@ -216,21 +216,19 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0 22px
 .foot-lang button{background:none; border:1px solid var(--line); color:rgba(255,255,255,0.7); padding:5px 10px; border-radius:999px; font-size:0.76rem; font-weight:700;}
 .foot-lang button[aria-current="true"]{color:var(--orange); border-color:var(--orange);}
 
-/* ============ АДАПТИВНОСТЬ (ВСЕ УСТРОЙСТВА) ============ */
-/* Телефоны (маленькие) */
+/* АДАПТИВНОСТЬ */
 @media (max-width: 480px) {
   .wrap { padding: 0 16px; }
   .btn { padding: 12px 20px; font-size: 0.9rem; }
   .hero { min-height: 70vh; }
   .hero-inner { padding: 60px 20px; }
   .glass-card { padding: 24px; border-radius: 18px; }
-  .section { padding: 60px 0; }
+  section { padding: 60px 0; }
   .hero-advantages span { font-size: 0.85rem; padding: 8px 14px; }
   .step-card { padding: 20px 10px; }
   form { padding: 20px; }
 }
 
-/* Телефоны (большие) и планшеты (портрет) */
 @media (max-width: 768px) {
   .hero { min-height: 60vh; }
   .hero-inner { padding: 80px 20px; }
@@ -245,28 +243,19 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0 22px
   .row2 { grid-template-columns: 1fr; }
 }
 
-/* Планшеты (альбом) и небольшие ноутбуки */
 @media (max-width: 980px) {
   .svc-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* Мобильное меню (Гамбургер) */
 @media (max-width: 860px) {
   .nav { position: relative; }
-  .navlinks { 
-    display: flex; flex-direction: column; align-items: flex-start; gap: 4px; 
-    position: absolute; top: calc(100% + 1px); left: 0; right: 0; background: var(--navy); 
-    padding: 10px 28px 18px; box-shadow: 0 16px 30px rgba(0,0,0,0.28); 
-    max-height: 0; overflow: hidden; opacity: 0; 
-    transition: max-height .3s ease, opacity .25s ease, padding .3s ease; 
-  }
+  .navlinks { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; position: absolute; top: calc(100% + 1px); left: 0; right: 0; background: var(--navy); padding: 10px 28px 18px; box-shadow: 0 16px 30px rgba(0,0,0,0.28); max-height: 0; overflow: hidden; opacity: 0; transition: max-height .3s ease, opacity .25s ease, padding .3s ease; }
   .navlinks.open { max-height: 400px; opacity: 1; padding: 14px 28px 20px; }
   .navlinks a { padding: 10px 0; width: 100%; }
   .burger { display: block; }
 }
 
-/* Очень широкие мониторы (Full HD и больше) */
 @media (min-width: 1600px) {
-  .hero { min-height: 70vh; } /* Немного уменьшаем высоту на огромных экранах, чтобы фото не казалось размытым */
+  .hero { min-height: 70vh; }
 }
