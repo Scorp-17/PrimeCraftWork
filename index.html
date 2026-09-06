@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- ДОБАВЛЕН '?v=2' ДЛЯ СБРОСА КЭША -->
-<link rel="stylesheet" href="css/styles.css?v=2">
+<!-- Добавлен ?v=3 для принудительного сброса кэша браузера -->
+<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 
@@ -42,9 +42,10 @@
 </header>
 
 <main id="top">
-  <!-- HERO -->
+
+  <!-- HERO: Убраны инлайн-стили из .hero-bg -->
   <section class="hero">
-    <div class="hero-bg" style="background-image:linear-gradient(180deg, rgba(10,25,47,0.25), rgba(10,25,47,0.55) 60%, var(--navy) 100%), url('images/sunset.jpg'); background-size:cover; background-position:center;"></div>
+    <div class="hero-bg" style="background-image:url('images/sunset.jpg');"></div>
     
     <div class="hero-inner">
       <div class="glass-card">
@@ -66,9 +67,9 @@
   </section>
 
   <!-- TRUST -->
-  <section id="trust" class="section-dark" style="padding-top: 60px; padding-bottom: 60px;">
+  <section id="trust" class="section-dark">
     <div class="wrap">
-      <div class="section-head reveal" style="margin-bottom: 30px;">
+      <div class="section-head reveal">
         <span class="kicker" data-i18n="trust.kicker">Dlaczego my</span>
         <h2 data-i18n="trust.title">Dlaczego warto z nami współpracować?</h2>
       </div>
@@ -400,8 +401,8 @@
   </div>
 </div>
 
-<!-- ДОБАВЛЕН '?v=2' ДЛЯ СБРОСА КЭША -->
-<script src="js/main.js?v=2"></script>
+<!-- Добавлен ?v=3 для сброса кэша -->
+<script src="js/main.js?v=3"></script>
 <noscript><style>.reveal{opacity:1 !important; transform:none !important;}</style></noscript>
 </body>
 </html>
