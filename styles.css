@@ -96,7 +96,7 @@ section{padding:96px 0;}
 .svc-card:hover::before { opacity: 1; }
 .svc-card:hover { 
   transform: translateY(-6px); 
-  background: var(--navy); /* Тёмный фон при наведении */
+  background: var(--navy);
   box-shadow: 0 20px 40px rgba(10,25,47,0.15); 
 }
 .svc-icon{width:48px; height:48px; border-radius:12px; background:rgba(255,107,0,0.1); color:var(--orange); display:flex; align-items:center; justify-content:center; margin-bottom:15px; transition: background .3s ease;}
