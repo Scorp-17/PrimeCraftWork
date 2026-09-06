@@ -124,24 +124,28 @@ try {
 
   function applyLang(lang){
     document.documentElement.lang = lang;
+    
+    // Обновляем все элементы с data-i18n
     var nodes = document.querySelectorAll('[data-i18n]');
     for(var i=0;i<nodes.length;i++){
       var key = nodes[i].getAttribute('data-i18n');
       if(dict[lang][key] !== undefined) nodes[i].textContent = dict[lang][key];
     }
     
-    // АВТОМАТИЧЕСКИЙ ПЕРЕВОД ОПЦИЙ В ВЫПАДАЮЩИХ СПИСКАХ (ФИКС!)
+    // Обновляем ВСЕ option элементы в выпадающих списках
     var options = document.querySelectorAll('option[data-i18n]');
     for(var o=0; o<options.length; o++){
       var optKey = options[o].getAttribute('data-i18n');
       if(dict[lang][optKey] !== undefined) options[o].textContent = dict[lang][optKey];
     }
-    
+
+    // Обновляем placeholder
     var ph = document.querySelectorAll('[data-i18n-placeholder]');
     for(var j=0;j<ph.length;j++){
       var key2 = ph[j].getAttribute('data-i18n-placeholder');
       if(dict[lang][key2] !== undefined) ph[j].setAttribute('placeholder', dict[lang][key2]);
     }
+    
     var lbl = document.getElementById('langLabel');
     if(lbl) lbl.textContent = lang.toUpperCase();
     var btns = document.querySelectorAll('[data-lang]');
@@ -151,14 +155,24 @@ try {
     try{ localStorage.setItem('pcw_lang', lang); }catch(e){}
   }
 
+  // Инициализация языка
   var initialLang = 'pl';
   try{ var saved = localStorage.getItem('pcw_lang'); if(saved === 'pl' || saved === 'en') initialLang = saved; }catch(e){}
-  applyLang(initialLang);
+
+  // Принудительный повторный запуск перевода после полной загрузки DOM (чтобы форма точно перевелась)
+  function initLang(){ applyLang(initialLang); }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLang);
+  } else {
+    initLang();
+  }
+  window.addEventListener('load', initLang);
 
   var langButtons = document.querySelectorAll('[data-lang]');
   for(var b=0;b<langButtons.length;b++){
     langButtons[b].addEventListener('click', function(){
-      applyLang(this.getAttribute('data-lang'));
+      var newLang = this.getAttribute('data-lang');
+      applyLang(newLang);
       var menu = document.getElementById('langMenu'); if(menu) menu.classList.remove('open');
     });
   }
