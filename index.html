@@ -233,8 +233,7 @@
 <div class="privacy-banner" id="privacyBanner" role="dialog" aria-live="polite" aria-label="Powiadomienie o przetwarzaniu danych">
   <div class="privacy-banner-inner">
     <p><span data-i18n="privacyBanner.text">Ta strona przetwarza dane osobowe przesłane przez formularz kontaktowy zgodnie z naszą </span><a href="#" id="privacyBannerLink" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="privacyBanner.textEnd">.</span></p>
-    <button type="button" class="btn btn-orange" id="privacyBannerOk" data-i18n="privacyBanner.ok" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
-  </div>
+    <button type="button" class="btn btn-orange" id="privacyBannerOk" data-i18n="privacyBanner.ok" onclick="document.getElementById('privacyBanner').style.display='none'; try{localStorage.setItem('pcw_privacy_ack','1')}catch(e){}" style="padding:10px 20px; font-size:0.88rem;">Rozumiem</button>
 </div>
 
 <div class="policy-modal" id="policyModal" role="dialog" aria-modal="true" aria-label="Polityka prywatności">
