@@ -293,3 +293,39 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0 22px
     height: 14px;
   }
 }
+/* ====== Mobile Adaptation Fixes (Append to end of styles.css) ====== */
+
+/* 1. Исправление текста в плитках: разрешаем перенос длинных слов */
+.svc-card h3,
+.svc-card p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 2. На маленьких экранах принудительно делаем 1 колонку (а не 2) */
+@media (max-width: 700px) {
+    .svc-grid,
+    .why-grid,
+    .gallery-grid,
+    .steps-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .svc-card {
+        padding: 24px;
+    }
+}
+
+/* 3. Исправление шапки: уменьшаем высоту, чтобы фото не зуммировалось */
+@media (max-width: 700px) {
+    .hero {
+        min-height: 55vh; /* Высота стала меньше, фото влезает лучше */
+        padding: 0;
+    }
+    .hero-inner {
+        padding: 50px 20px;
+    }
+    .hero-bg {
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
