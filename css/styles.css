@@ -329,3 +329,57 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0 22px
         background-position: center center !important;
     }
 }
+/* ====== ФИНАЛЬНЫЕ ИСПРАВЛЕНИЯ ====== */
+
+/* Шапка: фон не растягивается, а кадрируется без порчи качества */
+.hero {
+  min-height: 0;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Ограничение высоты шапки на мобильных, чтобы фото не "вылезало" */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero-inner {
+    padding: 50px 20px;
+  }
+  .glass-card {
+    padding: 24px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p.lead {
+    font-size: 1rem;
+  }
+  .hero-advantages {
+    gap: 8px;
+  }
+  .hero-advantages span {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Плитки: всегда 1 колонка на экранах меньше 768px, тексты переносятся */
+@media (max-width: 768px) {
+  .svc-grid,
+  .why-grid,
+  .gallery-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .svc-card {
+    padding: 24px;
+  }
+  .svc-card h3,
+  .svc-card p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
