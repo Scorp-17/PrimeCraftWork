@@ -6,6 +6,14 @@ try {
       "hero.title":"Montaż i demontaż rusztowań w Belgii",
       "hero.subtitle":"Doświadczona ekipa rusztowaniowa dla firm budowlanych, przemysłowych i wykonawców generalnych.",
       "hero.cta":"Zapytaj o wycenę","hero.ctaSecondary":"Zobacz realizacje",
+      "about.kicker":"O nas",
+      "about.title":"Prime Kraft Work — profesjonalne rusztowania w Belgii",
+      "about.p1":"Prime Kraft Work to polska firma specjalizująca się w profesjonalnym montażu i demontażu rusztowań oraz kompleksowym wsparciu ekip budowlanych przy realizacji projektów w Belgii.",
+      "about.p2":"Współpracujemy z doświadczonym zespołem monterów rusztowań, którzy posiadają wieloletnie doświadczenie w pracy na budowach i realizacji projektów na terenie Belgii. Dzięki praktycznej wiedzy, dobrej organizacji pracy i odpowiedzialnemu podejściu zapewniamy sprawną oraz bezpieczną realizację powierzonych zadań.",
+      "about.p3":"Dotychczas zdobywaliśmy doświadczenie przede wszystkim we współpracy z innymi wykonawcami. Obecnie rozwijamy bezpośrednią współpracę z firmami i wykonawcami, którym zależy na sprawdzonym, zaangażowanym i elastycznym partnerze.",
+      "about.quote":"Naszą mocną stroną jest osobiste zaangażowanie właściciela firmy. Na co dzień pracujemy razem z naszymi ekipami na budowach, dbając o jakość wykonania, terminowość i właściwą organizację prac.",
+      "about.p4":"Dodatkowo zapewniamy możliwość wsparcia transportowego dzięki kierowcy z prawem jazdy kategorii C+E oraz doświadczeniem w obsłudze samochodu z HDS.",
+      "about.p5":"Stawiamy na jakość, bezpieczeństwo, terminowość i długoterminową współpracę.",
       "trust.kicker":"Dlaczego my","trust.title":"Dlaczego warto z nami współpracować?",
       "trust.i1.title":"Doświadczenie","trust.i1.text":"Doświadczona ekipa na budowach w Belgii.",
       "trust.i2.title":"Bezpośrednia współpraca","trust.i2.text":"Bez zbędnych pośredników.",
@@ -64,6 +72,14 @@ try {
       "hero.title":"Assembly and dismantling of scaffolding in Belgium",
       "hero.subtitle":"Experienced scaffolding crew for construction, industrial companies and general contractors.",
       "hero.cta":"Get a quote","hero.ctaSecondary":"See projects",
+      "about.kicker":"About Us",
+      "about.title":"Prime Kraft Work — professional scaffolding in Belgium",
+      "about.p1":"Prime Kraft Work is a Polish company specialising in professional scaffold erection and dismantling, as well as providing comprehensive support to construction teams working on projects in Belgium.",
+      "about.p2":"We work with an experienced team of scaffolders with many years of practical experience on construction sites and extensive experience delivering projects throughout Belgium. Our practical expertise, efficient organisation and responsible approach allow us to carry out assigned work safely, efficiently and to a high standard.",
+      "about.p3":"Until now, we have gained most of our experience by working through other contractors. We are now developing direct cooperation with companies and contractors looking for a reliable, experienced and flexible partner for their construction projects.",
+      "about.quote":"One of our key strengths is the personal involvement of the company owner. I work alongside our teams on construction sites on a daily basis, personally overseeing the quality, organisation and proper execution of the work.",
+      "about.p4":"We can also provide additional transport support through a professional driver holding a C+E driving licence and experienced in operating vehicles equipped with a truck-mounted crane (HDS).",
+      "about.p5":"We focus on quality, safety, reliability, punctuality and long-term business relationships.",
       "trust.kicker":"Why us","trust.title":"Why is it worth cooperating with us?",
       "trust.i1.title":"Experience","trust.i1.text":"Experienced crew on construction sites in Belgium.",
       "trust.i2.title":"Direct cooperation","trust.i2.text":"No unnecessary middlemen.",
@@ -122,6 +138,14 @@ try {
       "hero.title":"Montage en demontage van steigers in België",
       "hero.subtitle":"Ervaren steigerteam voor bouwbedrijven, industriële bedrijven en algemene aannemers.",
       "hero.cta":"Vraag een offerte aan","hero.ctaSecondary":"Bekijk projecten",
+      "about.kicker":"Over ons",
+      "about.title":"Prime Kraft Work — professionele steigers in België",
+      "about.p1":"Prime Kraft Work is een Pools bedrijf dat gespecialiseerd is in de professionele montage en demontage van steigers en in het leveren van ondersteuning aan bouwbedrijven en bouwteams bij projecten in België.",
+      "about.p2":"Wij werken met een ervaren team van steigerbouwers met jarenlange praktijkervaring op bouwplaatsen en ruime ervaring met projecten in België. Dankzij onze vakkennis, efficiënte organisatie en verantwoordelijke werkhouding kunnen wij werkzaamheden veilig, vakkundig en volgens de afgesproken planning uitvoeren.",
+      "about.p3":"Tot nu toe hebben wij onze ervaring voornamelijk opgebouwd door samen te werken met andere aannemers. Inmiddels richten wij ons steeds meer op rechtstreekse samenwerking met bedrijven en aannemers die op zoek zijn naar een betrouwbare, ervaren en flexibele partner voor hun bouwprojecten.",
+      "about.quote":"Een van onze sterke punten is de persoonlijke betrokkenheid van de eigenaar. Ik werk dagelijks samen met onze teams op de bouwplaats en houd persoonlijk toezicht op de kwaliteit, organisatie en correcte uitvoering van de werkzaamheden.",
+      "about.p4":"Daarnaast kunnen wij indien nodig ook transportondersteuning bieden via een professionele chauffeur met een C+E-rijbewijs en ervaring met het bedienen van voertuigen met een autolaadkraan.",
+      "about.p5":"Wij staan voor kwaliteit, veiligheid, betrouwbaarheid, stiptheid en duurzame zakelijke samenwerkingen.",
       "trust.kicker":"Waarom wij","trust.title":"Waarom met ons samenwerken?",
       "trust.i1.title":"Ervaring","trust.i1.text":"Ervaren team op bouwplaatsen in België.",
       "trust.i2.title":"Directe samenwerking","trust.i2.text":"Zonder onnodige tussenpersonen.",
@@ -180,6 +204,14 @@ try {
       "hero.title":"Montage et démontage d'échafaudages en Belgique",
       "hero.subtitle":"Équipe expérimentée pour les entreprises de construction, industrielles et les entrepreneurs généraux.",
       "hero.cta":"Demander un devis","hero.ctaSecondary":"Voir les réalisations",
+      "about.kicker":"À propos de nous",
+      "about.title":"Prime Kraft Work — échafaudages professionnels en Belgique",
+      "about.p1":"Prime Kraft Work est une entreprise polonaise spécialisée dans le montage et le démontage professionnels d'échafaudages, ainsi que dans l'accompagnement d'équipes et d'entreprises du secteur de la construction sur des projets en Belgique.",
+      "about.p2":"Nous travaillons avec une équipe expérimentée de monteurs d'échafaudages disposant de plusieurs années d'expérience pratique sur les chantiers et d'une solide expérience dans la réalisation de projets en Belgique. Notre savoir-faire, notre organisation efficace et notre approche responsable nous permettent de réaliser les travaux confiés dans le respect des exigences de qualité, de sécurité et des délais convenus.",
+      "about.p3":"Jusqu'à présent, nous avons principalement acquis notre expérience en travaillant pour le compte d'autres entreprises et entrepreneurs. Nous souhaitons désormais développer des collaborations directes avec des entreprises et des entrepreneurs à la recherche d'un partenaire fiable, expérimenté et flexible pour leurs projets de construction.",
+      "about.quote":"L'implication personnelle du dirigeant constitue l'un de nos principaux atouts. Je travaille quotidiennement aux côtés de nos équipes sur les chantiers afin de superviser personnellement la qualité, l'organisation et la bonne exécution des travaux.",
+      "about.p4":"Nous pouvons également proposer, si nécessaire, un soutien logistique et de transport grâce à un chauffeur professionnel titulaire du permis C+E et expérimenté dans la conduite de véhicules équipés d'une grue auxiliaire.",
+      "about.p5":"Notre priorité : la qualité, la sécurité, la fiabilité, le respect des délais et la construction de relations professionnelles durables.",
       "trust.kicker":"Pourquoi nous","trust.title":"Pourquoi travailler avec nous ?",
       "trust.i1.title":"Expérience","trust.i1.text":"Équipe expérimentée sur les chantiers en Belgique.",
       "trust.i2.title":"Coopération directe","trust.i2.text":"Sans intermédiaires inutiles.",
@@ -357,17 +389,17 @@ try {
     var privacyBanner = document.getElementById('privacyBanner'); var privacyBannerOk = document.getElementById('privacyBannerOk'); var privacyBannerLink = document.getElementById('privacyBannerLink');
     if(privacyBanner){ var alreadyAccepted = false; try{ alreadyAccepted = localStorage.getItem('pcw_privacy_ack') === '1'; }catch(err){} if(!alreadyAccepted){ setTimeout(function(){ privacyBanner.classList.add('show'); }, 400); } if(privacyBannerOk){ privacyBannerOk.addEventListener('click', function(){ privacyBanner.classList.remove('show'); try{ localStorage.setItem('pcw_privacy_ack', '1'); }catch(err){} }); } if(privacyBannerLink) privacyBannerLink.addEventListener('click', openPolicyModal); }
 
-    function showStatus(kind, textPl, textEn){ statusEl.className = 'form-status ' + kind; statusEl.textContent = currentLang() === 'pl' ? textPl : currentLang() === 'en' ? textEn : currentLang() === 'nl' ? textPl : textEn; }
+    function showStatus(kind, textPl, textEn, textNl, textFr){ statusEl.className = 'form-status ' + kind; var lang = currentLang(); statusEl.textContent = lang === 'pl' ? textPl : lang === 'en' ? textEn : lang === 'nl' ? textNl : textFr; }
 
     form.addEventListener('submit', function(e){
-      e.preventDefault(); showStatus('', '', '');
+      e.preventDefault(); showStatus('', '', '', '', '');
       var honey = document.getElementById('cf-hp'); if(honey && honey.value){ showStatus('success', 'Dziękujemy! Wiadomość została wysłana.', 'Thank you! Your message has been sent.', 'Bedankt! Uw bericht is verzonden.', 'Merci ! Votre message a été envoyé.'); form.reset(); return; }
       if(Date.now() - formLoadedAt < 3000){ showStatus('error', 'Spróbuj ponownie za chwilę.', 'Please try again in a moment.', 'Probeer het over een moment opnieuw.', 'Veuillez réessayer dans un instant.'); return; }
       var lastSubmit = 0; try{ lastSubmit = parseInt(localStorage.getItem('pcw_last_submit') || '0', 10); }catch(err){}
       var secondsLeft = Math.ceil((60000 - (Date.now() - lastSubmit)) / 1000);
       if(lastSubmit && secondsLeft > 0){ showStatus('error', 'Wiadomość już została wysłana. Spróbuj ponownie za ' + secondsLeft + ' s.', 'A message was already sent. Please try again in ' + secondsLeft + 's.', 'Er is al een bericht verzonden. Probeer het opnieuw over ' + secondsLeft + ' s.', 'Un message a déjà été envoyé. Veuillez réessayer dans ' + secondsLeft + ' s.'); return; }
       if(!validateForm()){ showStatus('error', 'Popraw zaznaczone pola.', 'Please fix the highlighted fields.', 'Corrigeer de gemarkeerde velden.', 'Veuillez corriger les champs surlignés.'); return; }
-      submitBtn.disabled = true; submitBtn.textContent = currentLang() === 'pl' ? 'Wysyłanie...' : currentLang() === 'en' ? 'Sending...' : currentLang() === 'nl' ? 'Verzenden...' : 'Envoi en cours...'; try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
+      submitBtn.disabled = true; var lang = currentLang(); submitBtn.textContent = lang === 'pl' ? 'Wysyłanie...' : lang === 'en' ? 'Sending...' : lang === 'nl' ? 'Verzenden...' : 'Envoi en cours...'; try{ localStorage.setItem('pcw_last_submit', String(Date.now())); }catch(err){}
       var frame = document.getElementById('hiddenSubmitFrame'); var settled = false;
       function finishSubmit(){ if(settled) return; settled = true; frame.removeEventListener('load', onFrameLoad); showStatus('success', 'Dziękujemy! Wiadomość została wysłana, odpowiemy najszybciej jak to możliwe.', 'Thank you! Your message has been sent — we will reply as soon as possible.', 'Bedankt! Uw bericht is verzonden — wij antwoorden zo snel mogelijk.', 'Merci ! Votre message a été envoyé — nous répondrons dès que possible.'); form.reset(); submitBtn.disabled = false; submitBtn.textContent = originalSubmitLabel; }
       function onFrameLoad(){ finishSubmit(); }
