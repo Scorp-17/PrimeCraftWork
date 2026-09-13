@@ -152,29 +152,142 @@ section{padding:96px 0;}
 .cta-band p{color:rgba(255,255,255,0.75); margin-top:10px; max-width:44ch;}
 
 /* CONTACT */
+/* CONTACT */
 .contact-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px;}
 .contact-grid-single{display:flex; justify-content:center;}
 .contact-grid-single form{width:100%; max-width:560px;}
-form{display:grid; gap:14px; background:var(--off); padding:30px; border-radius:var(--radius); position:relative;}
-.row2{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
-.field{display:grid; gap:6px;}
-label{font-size:0.84rem; font-weight:700; color:var(--navy);}
-input, textarea, select{border:1.5px solid var(--line-dk); background:var(--white); padding:12px 14px; border-radius:10px; font-family:inherit; font-size:0.96rem; color:var(--ink);}
-input:focus, textarea:focus, select:focus{outline:none; border-color:var(--orange);}
-textarea{resize:vertical; min-height:100px;}
-.hp-field{position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0,0,0,0) !important; white-space:nowrap !important; border:0 !important;}
-.field-error{display:block; min-height:1.1em; font-size:0.8rem; color:#D93025; font-weight:600;}
-.field.has-error input, .field.has-error textarea, .field.has-error select{border-color:#D93025;}
-.form-status{font-size:0.92rem; font-weight:600; padding:2px 0; min-height:1.3em;}
-.form-status.success{color:#1a7f37;}
-.form-status.error{color:#D93025;}
-#cf-submit[disabled]{opacity:0.6; cursor:not-allowed; transform:none;}
-.consent-field{display:flex; align-items:flex-start; gap:10px; margin-top:2px;}
-.consent-field input[type="checkbox"]{width:20px; height:20px; flex-shrink:0; margin-top:2px; accent-color:var(--orange); cursor:pointer;}
-.consent-field label{font-size:0.88rem; font-weight:500; color:var(--ink); line-height:1.5; cursor:pointer;}
-.consent-field a{color:var(--orange); font-weight:700; text-decoration:underline;}
-.consent-field.has-error label{color:#D93025;}
-.consent-field.has-error{outline:2px solid #D93025; outline-offset:4px; border-radius:6px;}
+
+/* Сама форма — белая карточка с тенью, отделяется от серого фона */
+form{
+  display:grid; 
+  gap:18px; 
+  background: var(--white); 
+  padding: 36px 32px;
+  border-radius: var(--radius); 
+  position: relative;
+  box-shadow: 0 10px 40px rgba(10,25,47,0.08);
+  border: 1px solid var(--line-dk);
+}
+
+.row2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+.field{display:grid; gap:8px;}
+
+label{
+  font-size: 0.85rem; 
+  font-weight: 700; 
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+/* Поля теперь с ЧЁТКОЙ рамкой и слегка серым фоном — хорошо видны */
+input, textarea, select{
+  border: 2px solid #D5DCE5; 
+  background: #F8FAFC; 
+  padding: 14px 16px;
+  border-radius: 10px; 
+  font-family: inherit; 
+  font-size: 0.98rem; 
+  color: var(--ink);
+  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  width: 100%;
+}
+input:hover, textarea:hover, select:hover {
+  border-color: #B0BCCB;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none; 
+  border-color: var(--orange); 
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(255,107,0,0.15);
+}
+input::placeholder, textarea::placeholder{
+  color: #9AA5B5;
+  font-weight: 400;
+}
+textarea{
+  resize: vertical; 
+  min-height: 120px;
+}
+
+/* Галочка согласия в отдельной рамке, чтобы не терялась */
+.consent-field{
+  display: flex; 
+  align-items: flex-start; 
+  gap: 12px; 
+  padding: 14px 16px;
+  background: #F8FAFC;
+  border: 2px solid #D5DCE5;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+.consent-field input[type="checkbox"]{
+  width: 20px; 
+  height: 20px; 
+  flex-shrink: 0; 
+  margin-top: 2px; 
+  accent-color: var(--orange); 
+  cursor: pointer;
+}
+.consent-field label{
+  font-size: 0.88rem; 
+  font-weight: 500; 
+  color: var(--ink); 
+  line-height: 1.55; 
+  cursor: pointer;
+  letter-spacing: 0;
+}
+.consent-field a{
+  color: var(--orange); 
+  font-weight: 700; 
+  text-decoration: underline;
+}
+.consent-field.has-error{
+  border-color: #D93025; 
+  background: rgba(217,48,37,0.04);
+}
+.consent-field.has-error label{color: #D93025;}
+
+/* Ошибки ввода */
+.field-error{
+  display: block; 
+  min-height: 1.1em; 
+  font-size: 0.8rem; 
+  color: #D93025; 
+  font-weight: 600;
+}
+.field.has-error input, 
+.field.has-error textarea, 
+.field.has-error select{
+  border-color: #D93025;
+  background: rgba(217,48,37,0.04);
+}
+
+/* Кнопка отправки — крупнее */
+#cf-submit{
+  margin-top: 8px;
+  padding: 16px 32px;
+  font-size: 1rem;
+}
+#cf-submit[disabled]{opacity: 0.6; cursor: not-allowed; transform: none;}
+
+/* Сообщение о статусе */
+.form-status{
+  font-size: 0.92rem; 
+  font-weight: 600; 
+  padding: 2px 0; 
+  min-height: 1.3em;
+}
+.form-status.success{color: #1a7f37;}
+.form-status.error{color: #D93025;}
+
+/* Адаптивность формы */
+@media (max-width:900px){
+  .contact-grid{grid-template-columns:1fr;}
+  .row2{grid-template-columns:1fr;}
+}
+@media (max-width:480px){
+  form{padding: 24px 20px;}
+}
 
 /* POLICY & MODALS */
 .policy-modal{position:fixed; inset:0; z-index:1100; background:rgba(5,10,20,0.72); display:none; align-items:center; justify-content:center; padding:24px; -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px);}
