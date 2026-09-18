@@ -52,7 +52,6 @@ header{position:sticky; top:0; z-index:100; background:var(--white); box-shadow:
   display: block;
 }
 
-/* Ссылки в шапке — плашки */
 .navlinks{display:flex; gap:10px; align-items:center;}
 .navlinks a{
   display:inline-flex;
@@ -96,7 +95,6 @@ header{position:sticky; top:0; z-index:100; background:var(--white); box-shadow:
 .btn-dark{background:var(--navy); color:var(--white);}
 .btn-dark:hover{background:var(--navy-2); transform:translateY(-2px);}
 
-/* Кнопка «Zapytaj o wycenę» в шапке */
 .btn-nav-cta{
   padding: 10px 16px;
   font-size: 0.9rem;
@@ -193,8 +191,20 @@ form{
   border: 1px solid var(--line-dk);
 }
 
-.row2{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
-.field{display:grid; gap:10px;}
+/* Выравнивание полей в строке */
+.row2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:start;
+}
+
+/* Поле — flex-колонка, чтобы не растягивалось */
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
 
 label{
   font-size: 1.05rem;
