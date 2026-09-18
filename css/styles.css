@@ -589,5 +589,18 @@ header {
     border-bottom: none;
   }
 }
-
-/* Футер оставляем тёмным как есть — для контраста */
+header {
+  background: var(--white) !important;
+  box-shadow: 0 4px 18px rgba(10,25,47,0.08) !important;
+  border-bottom: 1px solid rgba(10,25,47,0.1);
+}
+.logo, .foot-logo { color: var(--navy); }
+.navlinks a { color: var(--navy) !important; }
+.navlinks a:hover { color: var(--orange) !important; }
+.lang-btn {
+  background: var(--off) !important;
+  border: 1.5px solid rgba(10,25,47,0.1) !important;
+  color: var(--navy) !important;
+}
+.burger span { background: var(--navy) !important; }
+.foot-logo .logo-img { background: transparent; }
