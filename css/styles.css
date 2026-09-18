@@ -508,3 +508,86 @@ footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:42px 0 22px
     word-break: break-word;
   }
 }
+/* ============ ИНВЕРСИЯ ШАПКИ — светлая тема ============ */
+header {
+  background: var(--white) !important;
+  box-shadow: 0 4px 18px rgba(10,25,47,0.08) !important;
+  border-bottom: 1px solid var(--line-dk);
+}
+
+/* Логотип — тёмно-синий текст */
+.logo {
+  color: var(--navy) !important;
+}
+.logo span {
+  color: var(--orange) !important;
+}
+
+/* Картинка-логотип на белом фоне — без плашек и рамок */
+.logo-img {
+  height: 55px;
+  width: auto;
+  display: block;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Ссылки в шапке — тёмные */
+.navlinks a {
+  color: var(--navy) !important;
+  opacity: 0.85;
+}
+.navlinks a:hover {
+  color: var(--orange) !important;
+  opacity: 1;
+}
+
+/* Кнопка языка — светлая */
+.lang-btn {
+  background: var(--off) !important;
+  border: 1.5px solid var(--line-dk) !important;
+  color: var(--navy) !important;
+}
+.lang-btn:hover {
+  background: #e8ecf1 !important;
+}
+
+/* Выпадающее меню языков — светлое */
+.lang-menu {
+  background: var(--white) !important;
+  border: 1px solid var(--line-dk) !important;
+  box-shadow: 0 12px 30px rgba(10,25,47,0.15) !important;
+}
+.lang-menu button {
+  color: var(--navy) !important;
+}
+.lang-menu button:hover {
+  background: var(--off) !important;
+}
+.lang-menu button[aria-current="true"] {
+  color: var(--orange) !important;
+}
+
+/* Бургер — тёмные полоски */
+.burger span {
+  background: var(--navy) !important;
+}
+
+/* Мобильное меню — тоже светлое */
+@media (max-width: 860px) {
+  .navlinks {
+    background: var(--white) !important;
+    box-shadow: 0 16px 30px rgba(10,25,47,0.15) !important;
+  }
+  .navlinks a {
+    color: var(--navy) !important;
+    border-bottom: 1px solid var(--line-dk);
+  }
+  .navlinks a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Футер оставляем тёмным как есть — для контраста */
