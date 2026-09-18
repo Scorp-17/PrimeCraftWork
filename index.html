@@ -211,10 +211,10 @@
           </div>
           <div class="row2">
             <div class="field"><label for="cf-phone" data-i18n="contact.form.phone">Telefon</label><input id="cf-phone" name="Telefon" type="tel"><span class="field-error" id="err-phone"></span></div>
-            <div class="field"><label for="cf-company" data-i18n="contact.form.company">Firma</label><input id="cf-company" name="Firma" type="text"></div>
+            <div class="field"><label for="cf-company" data-i18n="contact.form.company">Firma</label><input id="cf-company" name="Firma" type="text"><span class="field-error" id="err-company"></span></div>
           </div>
           <div class="row2">
-            <div class="field"><label for="cf-location" data-i18n="contact.form.location">Lokalizacja budowy</label><input id="cf-location" name="Lokalizacja budowy" type="text"></div>
+            <div class="field"><label for="cf-location" data-i18n="contact.form.location">Lokalizacja budowy</label><input id="cf-location" name="Lokalizacja budowy" type="text"><span class="field-error" id="err-location"></span></div>
             <div class="field"><label for="cf-type" data-i18n="contact.form.type">Rodzaj projektu</label>
               <select id="cf-type" name="Rodzaj projektu">
                 <option value="Budowa przemysłowa" data-i18n="contact.form.type1">Budowa przemysłowa</option>
@@ -222,6 +222,7 @@
                 <option value="Obiekt komercyjny" data-i18n="contact.form.type3">Obiekt komercyjny</option>
                 <option value="Inny" data-i18n="contact.form.type4">Inny</option>
               </select>
+              <span class="field-error" id="err-type"></span>
             </div>
           </div>
           <div class="row2">
@@ -232,8 +233,9 @@
                 <option value="Montaż + demontaż" data-i18n="contact.form.scope3">Montaż + demontaż</option>
                 <option value="Transport HDS" data-i18n="contact.form.scope4">Transport HDS</option>
               </select>
+              <span class="field-error" id="err-scope"></span>
             </div>
-            <div class="field"><label for="cf-term" data-i18n="contact.form.term">Planowany termin</label><input id="cf-term" name="Planowany termin" type="text" data-i18n-placeholder="contact.form.termPlaceholder" placeholder="RRRR-MM-DD"></div>
+            <div class="field"><label for="cf-term" data-i18n="contact.form.term">Planowany termin</label><input id="cf-term" name="Planowany termin" type="text" data-i18n-placeholder="contact.form.termPlaceholder" placeholder="RRRR-MM-DD"><span class="field-error" id="err-term"></span></div>
           </div>
           <div class="field"><label for="cf-msg" data-i18n="contact.form.message">Wiadomość</label><textarea id="cf-msg" name="Wiadomość" data-i18n-placeholder="contact.form.msgPlaceholder" placeholder="Opisz swój obiekt i zakres prac" required minlength="10"></textarea><span class="field-error" id="err-msg"></span></div>
           <div class="consent-field" id="consentField"><input type="checkbox" id="cf-consent" name="Zgoda" value="tak" required><label for="cf-consent"><span data-i18n="contact.form.consentBefore">Zapoznałem/-am się z </span><a href="#" id="policyLinkForm" data-i18n="contact.form.policyLink">Polityką prywatności</a><span data-i18n="contact.form.consentAfter"> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi tego zapytania.</span></label></div>
