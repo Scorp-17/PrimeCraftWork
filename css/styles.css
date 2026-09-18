@@ -160,11 +160,51 @@ section{padding:96px 0;}
 .why-card h3{color:var(--white); font-size:1.25rem; margin-bottom:10px;}
 .why-card p{color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.65;}
 
+/* ============ PROCESS ============ */
 .steps-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px; text-align:center;}
-.step-card{background:var(--off); border:1px solid var(--line-dk); border-radius:var(--radius); padding:32px 22px;}
-.step-num{display:block; font-size:2.2rem; font-weight:800; color:var(--orange); margin-bottom:12px;}
-.step-card h3{font-size:1.2rem; color:var(--ink);}
+.step-card{
+  background:#FFFFFF;
+  border:1px solid var(--line-dk);
+  border-radius:var(--radius);
+  padding:32px 22px;
+  position:relative;
+  overflow:hidden;
+  box-shadow: 0 4px 12px rgba(10,25,47,0.06);
+  transition:transform .3s ease, background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.step-card::before{
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:4px;
+  background:#FF6B00;
+  opacity:0;
+  transition:opacity .3s ease;
+}
+.step-card:hover::before{opacity:1;}
+.step-card:hover{
+  transform:translateY(-6px);
+  background:#0A192F;
+  border-color:#0A192F;
+  box-shadow: 0 20px 40px rgba(10,25,47,0.15);
+}
+.step-num{
+  display:block;
+  font-size:2.2rem;
+  font-weight:800;
+  color:var(--orange);
+  margin-bottom:12px;
+  transition: color .3s ease;
+}
+.step-card:hover .step-num{color:#FF6B00;}
+.step-card h3{
+  font-size:1.2rem;
+  color:var(--ink);
+  transition: color .3s ease;
+}
+.step-card:hover h3{color:#FFFFFF;}
 
+/* GALLERY */
 .gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
 .g-item{position:relative; border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; cursor:zoom-in;}
 .g-item img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
@@ -191,7 +231,6 @@ form{
   border: 1px solid var(--line-dk);
 }
 
-/* Выравнивание полей в строке */
 .row2{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -199,7 +238,6 @@ form{
   align-items:start;
 }
 
-/* Поле — flex-колонка, чтобы не растягивалось */
 .field{
   display:flex;
   flex-direction:column;
