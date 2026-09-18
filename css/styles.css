@@ -604,3 +604,27 @@ header {
 }
 .burger span { background: var(--navy) !important; }
 .foot-logo .logo-img { background: transparent; }
+/* Логотип в шапке и футере */
+.logo, .foot-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+.foot-logo .logo-img {
+  height: 46px;
+}
+
+/* Адаптивность логотипа */
+@media (max-width: 768px) {
+  .logo-img { height: 42px; }
+  .foot-logo .logo-img { height: 38px; }
+}
+@media (max-width: 480px) {
+  .logo-img { height: 34px; }
+  .foot-logo .logo-img { height: 30px; }
+}
